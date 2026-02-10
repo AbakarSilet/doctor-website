@@ -1,0 +1,40 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================
+# Django
+# =========================
+*.sqlite3
+db.sqlite3
+media/
+staticfiles/
+fixtures/
+
+# =========================
+# Environment variables
+# =========================
+.env
+
+# =========================
+# IDE / Editors
+# =========================
+.idea/
+.vscode/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+
+# =========================
+# Project specific
+# =========================
+frontend/
+.tmp.driveupload/
+todo.txt
+A faire.txt

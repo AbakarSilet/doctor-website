@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+{% trans "Parcours et expériences médicales du Dr Lekamya Ngambi Ben-Ido" %}
+{% endblock title %}
+
+{% block meta_description %}
+{% trans "Découvrez le parcours, les expériences cliniques et les engagements du Dr Lekamya Ngambi Ben-Ido en médecine et santé publique." %}
+{% endblock meta_description %}
+   
+{% block content %}
+      <main class="main">
+         <!--==================== TRAVAUX ====================-->
+         <section class="work section">
+            <h2 class="section__title">
+               {% trans "Mes Réalisations" %} <br>
+               {% trans "Récentes" %}
+            </h2>
+
+            <div class="work__container work__page container grid">
+               <article class="work__card">
+                  <a href="#" target="_blank" class="work__link">
+                     <img src="{% static 'assets/img/work-1.png' %}" alt="Consultation médicale" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">{% trans "Consultation Médicale" %}</h2>
+                  <span class="work__subtitle">{% trans "Soins primaires et diagnostics" %}</span>
+               </article>
+
+               <article class="work__card">
+                  <a href="#" target="_blank" class="work__link">
+                     <img src="{% static 'assets/img/work-2.png' %}" alt="Campagne de vaccination" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">{% trans "Campagne de Vaccination" %}</h2>
+                  <span class="work__subtitle">{% trans "Prévention et santé publique" %}</span>
+               </article>
+
+               <article class="work__card">
+                  <a href="#" target="_blank" class="work__link">
+                     <img src="{% static 'assets/img/work-3.png' %}" alt="Bilan de santé" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">{% trans "Bilan de Santé Annuel" %}</h2>
+                  <span class="work__subtitle">{% trans "Dépistage et prévention" %}</span>
+               </article>
+
+               <article class="work__card">
+                  <a href="#" target="_blank" class="work__link">
+                     <img src="{% static 'assets/img/work-4.png' %}" alt="Prise en charge des urgences" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">{% trans "Prise en Charge des Urgences" %}</h2>
+                  <span class="work__subtitle">{% trans "Soins immédiats et efficaces" %}</span>
+               </article>
+
+               <article class="work__card">
+                  <a href="#" target="_blank" class="work__link">
+                     <img src="{% static 'assets/img/work-5.png' %}" alt="Éducation des patients" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">{% trans "Éducation des Patients" %}</h2>
+                  <span class="work__subtitle">{% trans "Sensibilisation et prévention" %}</span>
+               </article>
+
+               <article class="work__card">
+                  <a href="#" target="_blank" class="work__link">
+                     <img src="{% static 'assets/img/work-6.png' %}" alt="Équipements médicaux" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">{% trans "Équipements Modernes" %}</h2>
+                  <span class="work__subtitle">{% trans "Technologies de pointe" %}</span>
+               </article>
+            </div>
+         </section>
+      </main>
+
+{% endblock content %}
+
+{% block script %}
+         {{ block.super }}
+         <script src="{% static 'assets/js/main.js' %}"></script>
+{% endblock script %}

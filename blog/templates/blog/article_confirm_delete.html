@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% trans "Supprimer l'article" %}{% endblock %}
+
+{% block style %}
+    {{ block.super }}
+        <link rel="stylesheet" href="{% static 'css/article_confirm_delete.css' %}">
+{% endblock style %}
+    
+{% block content %}
+    <br><br>
+    <div class="delete-article-container section" style="padding-top: 10rem;"> <!-- Marge vers le haut augmentée à 10rem -->
+        <h1 class="delete-article-title">{% trans "Supprimer l'article" %}</h1>
+        <p class="delete-article-message">{% trans "Êtes-vous sûr de vouloir supprimer l'article" %} "{{ article.titre }}" ?</p>
+        <form method="post" class="delete-article-form">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-delete">{% trans "Confirmer la suppression" %}</button>
+            <a href="{% url 'article_detail' article.slug %}" class="btn btn-cancel">{% trans "Annuler" %}</a>
+        </form>
+    </div>
+    <br><br>
+
+{% endblock %}

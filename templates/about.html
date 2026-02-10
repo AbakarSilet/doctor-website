@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block title %}
+{% trans "À propos du Dr Lekamya Ngambi Ben-Ido – Médecin au Tchad" %}
+{% endblock title %}
+
+{% block meta_description %}
+{% trans "Découvrez le parcours, l’expérience et les engagements du Dr Lekamya Ngambi Ben-Ido, médecin au Tchad, spécialisé en santé publique et prévention." %}
+{% endblock meta_description %}
+
+   
+{% block content %}
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== ABOUT ====================-->
+         <section class="about section">
+            <h2 class="section__title">
+               {% trans "A propos" %} <br> 
+              {% trans "De moi" %}
+            </h2>
+
+            <div class="about__container about__page container grid">
+               <div class="about__perfil perfil">
+                  <div class="perfil__content">
+                     <img src="{% static 'images/fond 1.jpg' %}" alt="image" class="perfil__img">
+                  </div>
+               </div>
+
+               <div class="about__content grid">
+                  <div class="about__data grid">
+                     <div class="about__info grid">
+                        <h1 class="about__name">Lekamya Ngambi Ben-Ido</h1>
+                        <h2 class="about__profession">{% trans "Médecin Généraliste" %}</h2>
+                        <p class="about__description">
+                           {% trans "Passionné par le" %} <b>{% trans "soin des patients" %}</b> et l'amélioration de la <b>{% trans "qualité de vie" %}</b>, {% trans "j'ai des années d'expérience dans le domaine médical. Mes patients sont ravis des soins attentifs et des traitements efficaces que je leur offre." %}
+                       </p>
+                       
+                     </div>
+
+                     <a href="{% url 'contact_us' %}" class="about__button button">{% trans "Me contacter" %}</a>
+                  </div>
+
+                  <div class="about__skills">
+                     <h3 class="about__skills-title">{% trans "Mes competences" %}</h3>
+
+                     <div class="about__skills-content grid">
+
+                        <div class="about__skills-img"> <!-- Consultation -->
+                           <img src="{% static 'images/about_stethoscope.png' %}" alt="image Consultation" class="about__skills-img">
+                           <p class="about__skills-hover-text">{% trans "Consultation" %}</p>
+                        </div>
+
+                        <div class="about__skills-img"> <!-- Diagnostic -->
+                           <img src="{% static 'images/about_diagnosis.png' %}" alt="image Diagnostic" class="about__skills-img">
+                           <p class="about__skills-hover-text">{% trans "Diagnostic" %}</p>
+                        </div>
+
+                        <div class="about__skills-img"> <!-- Urgences -->
+                           <img src="{% static 'images/about_urgences.png' %}" alt="image Urgences" class="about__skills-img">
+                           <p class="about__skills-hover-text">{% trans "Urgences" %}</p>
+                        </div>
+
+                        <div class="about__skills-img"> <!-- Petite Chirurgie -->
+                           <img src="{% static 'images/about_scalpel.png' %}" alt="image Node.js" class="about__skills-img">
+                           <p class="about__skills-hover-text">{% trans "Petite chirurgie" %}</p>
+                        </div>
+
+                        <div class="about__skills-img"> <!-- Prise en charge -->
+                           <img src="{% static 'images/about_prise-en-charge.png' %}" alt="image React" class="about__skills-img">
+                           <p class="about__skills-hover-text">{% trans "Prise en charge" %}</p>
+                        </div>
+
+                        <div class="about__skills-img"> <!-- Collaboration -->
+                           <img src="{% static 'images/about_medical-team.png' %}" alt="image Collaboration" class="about__skills-img">
+                           <p class="about__skills-hover-text">{% trans "Collaboration" %}</p>
+                        </div>
+
+                        <div class="about__skills-img"> <!-- competences info -->
+                           <img src="{% static 'images/about_informatique.png' %}" alt="image Collaboration" class="about__skills-img">
+                           <p class="about__skills-hover-text">{% trans "Compétences en informatique" %}</p>
+                        </div>
+                     </div>
+
+                  </div>
+                  <!-- <a href="assets/pdf/monCV.pdf" download="" class="home__button button">Download CV</a> -->
+               </div>
+            </div>
+         </section>
+      </main>
+{% endblock content %}
+
+{% block script %}
+               {{ block.super }}
+               <script src="{% static 'assets/js/main.js' %}"></script>
+{% endblock script %}

@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% load l10n %}
+
+{% block title %}
+{{ article.titre }} | Dr Lekamya Ngambi Ben-Ido
+{% endblock %}
+
+{% block meta_description %}
+{{ article.contenu|striptags|truncatewords:25 }}
+{% endblock %}
+
+{% block style %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'css/article_detail.css' %}">
+{% endblock style %}
+
+{% block content %}
+<div class="article-container">
+    <article class="article-content">
+        <div class="article-header">
+            <h1 class="article-title">{{ article.titre }}</h1>
+            
+            {% if user.groups.all.0.name == 'Admin' %}
+                <div class="article-actions">
+                    <a href="{% url 'article_update' article.slug %}" class="icon-button" title="{% trans "Modifier l'article" %}">
+                        <i class="fas fa-edit"></i>
+                    </a>
+                    <a href="{% url 'article_delete' article.slug %}" class="icon-button icon-button-danger" title="{% trans "Supprimer l'article" %}">
+                        <i class="fas fa-trash"></i>
+                    </a>
+                </div>
+            {% endif %}
+        </div>
+
+        <p class="article-meta">
+            {% localize on %}
+             {{ article.date_creation|date:"DATE_FORMAT" }}
+            {% endlocalize %}
+        </p>
+        
+        <div class="article-body">
+            {{ article.contenu|safe|linebreaks }}
+            
+            {% if article.image %}
+                <div class="article-image">
+                    <img src="{{ article.image.url }}" alt="{{ article.titre }}">
+                </div>
+            {% endif %}
+            
+            {% if article.video %}
+                <div class="article-video">
+                    <video controls>
+                        <source src="{{ article.video.url }}" type="video/mp4">
+                        {% trans "Votre navigateur ne supporte pas la lecture de vidéos." %}
+                    </video>
+                </div>
+            {% endif %}
+        </div>
+
+        <!-- Bouton Like -->
+        <div class="like-section">
+            <button class="like-button {% if request.user in article.likes.all %}liked{% endif %}" 
+                    id="likeButton" 
+                    data-article-slug="{{ article.slug }}">
+                <i class="fa-solid fa-eye"></i>
+                <span id="likeCount">{{ article.vues }} {% trans "personnes ont lu cet article" %}</span>
+            </button>
+        </div>
+
+        <!-- Boutons de partage -->
+        <div class="share-buttons">
+            <a href="https://twitter.com/intent/tweet?text={{ article.titre|urlencode }}&url={{ request.build_absolute_uri|urlencode }}" 
+                class="share-button share-twitter" target="_blank">
+                <img src="{% static 'images/twitter-svgrepo-com.svg' %}" alt="Partager sur Twitter" class="share-icon">
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ request.build_absolute_uri|urlencode }}" 
+                class="share-button share-facebook" target="_blank">
+                <img src="{% static 'images/facebook-svgrepo-com.svg' %}" alt="Partager sur Facebook" class="share-icon">
+            </a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ request.build_absolute_uri|urlencode }}&title={{ article.titre|urlencode }}" 
+                class="share-button share-linkedin" target="_blank">
+                <img src="{% static 'images/linkedin-color-svgrepo-com.svg' %}" alt="Partager sur LinkedIn" class="share-icon">
+            </a>
+            <a href="mailto:?subject={{ article.titre|urlencode }}&body={{ request.build_absolute_uri|urlencode }}" 
+                class="share-button share-email" target="_blank">
+                <img src="{% static 'images/mail-svgrepo-com.svg' %}" alt="Partager par Email" class="share-icon">
+            </a>
+        </div>
+        {% if messages %}
+            {% for message in messages %}
+                {% if forloop.last %}
+                    <p class="login-prompt alert alert-{{ message.tags }}">{{ message }}</p>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    </article>
+</div>
+
+{% endblock %}

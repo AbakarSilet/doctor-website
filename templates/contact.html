@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}
+{% trans "Contactez Dr Lekamya Ngambi Ben-Ido – Médecin au Tchad" %}
+{% endblock title %}
+
+{% block meta_description %}
+{% trans "Prenez contact avec le Dr Lekamya Ngambi Ben-Ido, médecin au Tchad, pour informations, collaborations médicales ou questions de santé." %}
+{% endblock meta_description %}
+
+{% block content %}
+<main class="main">
+   <!--==================== CONTACT ====================-->
+   <section class="contact section">
+      <h2 class="section__title">
+         {% trans "Discutons ensemble" %}<br>
+         {% trans "de votre santé et de vos besoins" %}
+      </h2>
+
+      <div class="contact__page container grid">
+         <form class="contact__form grid" id="contact-form"
+               action="{% url 'send_email' %}" method="post">
+            {% csrf_token %}
+
+            <div class="contact__group grid">
+               <div class="contact__box">
+                  <input type="text"
+                         name="nom"
+                         id="name"
+                         required
+                         placeholder="{% trans 'Ecrivez vos noms' %}"
+                         class="contact__input">
+                  <label for="name" class="contact__label">{% trans "Nom complet" %}</label>
+               </div>
+
+               <div class="contact__box">
+                  <input type="email"
+                         name="email"
+                         id="email"
+                         required
+                         placeholder="{% trans 'Entrez votre Adresse email valide' %}"
+                         class="contact__input">
+                  <label for="email" class="contact__label">{% trans "Adresse Email" %}</label>
+               </div>
+            </div>
+
+            <div class="contact__box">
+               <input type="text"
+                      name="sujet"
+                      id="subject"
+                      required
+                      placeholder="{% trans 'Sujet de votre message' %}"
+                      class="contact__input">
+               <label for="subject" class="contact__label">{% trans "Sujet" %}</label>
+            </div>
+
+            <div class="contact__box contact__area">
+               <textarea name="message"
+                         id="message"
+                         required
+                         placeholder="{% trans 'Écrivez votre message' %}"
+                         class="contact__input"></textarea>
+               <label for="message" class="contact__label">{% trans "Message" %}</label>
+            </div>
+
+            <button type="submit" class="contact__send button">
+               {% trans "Envoyez le message" %}
+            </button>
+         </form>
+      </div>
+   </section>
+</main>
+{% endblock content %}
+
+{% block script %}
+   {{ block.super }}
+{% endblock script %}
+
+   

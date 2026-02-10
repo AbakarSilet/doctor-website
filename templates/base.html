@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}"
+      dir="{% if LANGUAGE_CODE == 'ar' %}rtl{% else %}ltr{% endif %}">
+
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+
+    <meta name="description" content="{% block meta_description %}{% endblock %}">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+
+    {% block style %}
+
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" as="style"
+        onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    </noscript>
+
+    <!--=============== FONT AWESOME ===============-->
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="{% static 'assets/css/swiper-bundle.min.css' %}">
+
+    <!--=============== CSS PRINCIPAL ===============-->
+    <link rel="stylesheet" href="{% static 'assets/css/styles.css' %}">
+
+    {% endblock style %}
+
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    {% include 'includes/header.html' %}
+
+    <!--==================== MAIN ====================-->
+    {% block content %}
+
+    {% endblock content %}
+
+    <!--==================== FOOTER ====================-->
+    {% include 'includes/footer.html' %}
+
+
+    {% block script %}
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- SCRIPT JS ===============-->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/js/swiper-bundle.min.js' %}" defer></script>
+    <script src="{% static 'assets/js/index.js' %}"></script>
+    <script src="{% static 'assets/js/header.js' %}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var logoutLink = document.getElementById('logout-link');
+
+            if (logoutLink) {
+                logoutLink.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    var confirmLogout = confirm("Êtes-vous sûr de vouloir vous déconnecter ?");
+                    if (confirmLogout) {
+                        window.location.href = logoutLink.href;
+                    }
+                });
+            }
+        });
+
+    </script>
+    {% endblock script %}
+</body>
+
+</html>

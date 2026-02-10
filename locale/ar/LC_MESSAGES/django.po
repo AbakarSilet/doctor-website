@@ -1,0 +1,815 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-09 20:33+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: .\accounts\models.py:33
+msgid "adresse email"
+msgstr "البريد الإلكتروني"
+
+#: .\accounts\models.py:34
+msgid "prénom"
+msgstr "الاسم الأول"
+
+#: .\accounts\models.py:35
+msgid "nom"
+msgstr "الاسم الأخير"
+
+#: .\accounts\models.py:37
+msgid "image de profil"
+msgstr "صورة الملف الشخصي"
+
+#: .\accounts\models.py:49
+msgid "groups"
+msgstr "المجموعات"
+
+#: .\accounts\models.py:56
+msgid "user permissions"
+msgstr "أذونات المستخدم"
+
+#: .\accounts\templates\accounts\edit_profile.html:123
+msgid "Prénom"
+msgstr "الاسم الأول"
+
+#: .\accounts\templates\accounts\edit_profile.html:128
+msgid "Nom"
+msgstr "الاسم الأخير"
+
+#: .\accounts\templates\accounts\edit_profile.html:133
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+#: .\accounts\templates\accounts\edit_profile.html:138
+msgid "Image de profil"
+msgstr "صورة الملف الشخصي"
+
+#: .\accounts\templates\accounts\edit_profile.html:146
+msgid "Pas d'image"
+msgstr "لا توجد صورة"
+
+#: .\accounts\templates\accounts\edit_profile.html:154
+msgid "Choisir une image"
+msgstr "اختر صورة"
+
+#: .\accounts\templates\accounts\password_reset_confirm.html:5
+msgid "Définir un nouveau mot de passe"
+msgstr "تعيين كلمة مرور جديدة"
+
+#: .\accounts\templates\accounts\password_reset_confirm.html:10
+msgid "Changer mon mot de passe"
+msgstr "تغيير كلمة مروري"
+
+#: .\accounts\templates\accounts\password_reset_email.html:41
+msgid "Réinitialisation de votre mot de passe"
+msgstr "إعادة تعيين كلمة المرور الخاصة بك"
+
+#: .\accounts\templates\accounts\password_reset_email.html:43
+msgid "Bonjour"
+msgstr "مرحباً"
+
+#: .\accounts\templates\accounts\password_reset_email.html:45
+msgid ""
+"Vous recevez cet email car vous avez demandé la réinitialisation du mot de "
+"passe de votre compte sur"
+msgstr "لقد استلمت هذا البريد لأنك طلبت إعادة تعيين كلمة المرور لحسابك على"
+
+#: .\accounts\templates\accounts\password_reset_email.html:47
+msgid ""
+"Veuillez cliquer sur le bouton ci-dessous pour définir un nouveau mot de "
+"passe:"
+msgstr "يرجى النقر على الزر أدناه لتعيين كلمة مرور جديدة:"
+
+#: .\accounts\templates\accounts\password_reset_email.html:49
+msgid "Réinitialiser mon mot de passe"
+msgstr "إعادة تعيين كلمة مروري"
+
+#: .\accounts\templates\accounts\password_reset_email.html:51
+msgid ""
+"Si le bouton ne fonctionne pas, vous pouvez copier et coller ce lien dans "
+"votre navigateur:"
+msgstr "إذا لم يعمل الزر، يمكنك نسخ الرابط ولصقه في متصفحك:"
+
+#: .\blog\forms.py:17 .\blog\models.py:51
+msgid "Un article ne peut pas contenir à la fois une image et une vidéo"
+msgstr "لا يمكن للمقال أن يحتوي على صورة وفيديو في نفس الوقت"
+
+#: .\blog\models.py:13
+msgid "La taille de l'image ne doit pas dépasser 10MB"
+msgstr "يجب ألا يتجاوز حجم الصورة 10 ميغابايت"
+
+#: .\blog\models.py:18
+msgid "La taille de la vidéo ne doit pas dépasser 20MB"
+msgstr "يجب ألا يتجاوز حجم الفيديو 20 ميغابايت"
+
+#: .\blog\models.py:26
+msgid "Format de fichier non supporté"
+msgstr "تنسيق الملف غير مدعوم"
+
+#: .\blog\models.py:66
+msgid "Article"
+msgstr "مقال"
+
+#: .\blog\models.py:67 .\blog\templates\blog\articles_list.html:21
+#: .\templates\transition.html:32
+msgid "Articles"
+msgstr "مقالات"
+
+#: .\blog\models.py:78
+msgid "views"
+msgstr "المشاهدات"
+
+#: .\blog\models.py:97
+msgid "Message de contact"
+msgstr "رسالة تواصل"
+
+#: .\blog\models.py:98
+msgid "Messages de contact"
+msgstr "رسائل التواصل"
+
+#: .\blog\templates\blog\article_confirm_delete.html:5
+#: .\blog\templates\blog\article_confirm_delete.html:15
+#: .\blog\templates\blog\article_detail.html:30
+msgid "Supprimer l'article"
+msgstr "حذف المقال"
+
+#: .\blog\templates\blog\article_confirm_delete.html:16
+msgid "Êtes-vous sûr de vouloir supprimer l'article"
+msgstr "هل أنت متأكد أنك تريد حذف المقال؟"
+
+#: .\blog\templates\blog\article_confirm_delete.html:19
+msgid "Confirmer la suppression"
+msgstr "تأكيد الحذف"
+
+#: .\blog\templates\blog\article_confirm_delete.html:20
+#: .\blog\templates\blog\article_form.html:62
+msgid "Annuler"
+msgstr "إلغاء"
+
+#: .\blog\templates\blog\article_detail.html:27
+msgid "Modifier l'article"
+msgstr "تعديل المقال"
+
+#: .\blog\templates\blog\article_detail.html:56
+#: .\blog\templates\blog\articles_list.html:35 .\templates\index.html:355
+msgid "Votre navigateur ne supporte pas la lecture de vidéos."
+msgstr "متصفحك لا يدعم تشغيل الفيديوهات."
+
+#: .\blog\templates\blog\article_detail.html:68
+msgid "personnes ont lu cet article"
+msgstr "شخص قرأ هذا المقال"
+
+#: .\blog\templates\blog\article_form.html:5
+msgid "Modifier"
+msgstr "تعديل"
+
+#: .\blog\templates\blog\article_form.html:5
+#: .\blog\templates\blog\article_form.html:60
+msgid "Créer"
+msgstr "إنشاء"
+
+#: .\blog\templates\blog\article_form.html:5
+msgid "un article"
+msgstr "مقال"
+
+#: .\blog\templates\blog\article_form.html:18
+msgid "Mettez à jour les informations de votre article."
+msgstr "قم بتحديث معلومات مقالك."
+
+#: .\blog\templates\blog\article_form.html:20
+msgid "Partagez vos connaissances en rédigeant un nouvel article."
+msgstr "شارك معرفتك من خلال كتابة مقال جديد."
+
+#: .\blog\templates\blog\article_form.html:27
+msgid "Titre"
+msgstr "العنوان"
+
+#: .\blog\templates\blog\article_form.html:35
+msgid "Contenu"
+msgstr "المحتوى"
+
+#: .\blog\templates\blog\article_form.html:43
+msgid "Image"
+msgstr "صورة"
+
+#: .\blog\templates\blog\article_form.html:51
+msgid "Vidéo"
+msgstr "فيديو"
+
+#: .\blog\templates\blog\article_form.html:60
+msgid "Mettre à jour"
+msgstr "تحديث"
+
+#: .\blog\templates\blog\articles_list.html:6
+msgid ""
+"Blog médical Afrique – Conseils & Prévention | Dr Lekamya Ngambi Ben-Ido"
+msgstr "المدونة الطبية في أفريقيا – نصائح ووقاية | د. ليكاميا نجامبي بن إيدو"
+
+#: .\blog\templates\blog\articles_list.html:10
+msgid ""
+"Articles médicaux rédigés par un médecin pour sensibiliser à la prévention "
+"et à la santé en Afrique."
+msgstr "مقالات طبية كتبها طبيب لتوعية الجمهور حول الوقاية والصحة في أفريقيا."
+
+#: .\blog\templates\blog\articles_list.html:22
+msgid "Découvrez mes derniers articles"
+msgstr "اكتشف أحدث مقالاتي"
+
+#: .\blog\templates\blog\articles_list.html:47 .\templates\index.html:367
+msgid "Lire plus"
+msgstr "اقرأ المزيد"
+
+#: .\blog\templates\blog\articles_list.html:53 .\templates\index.html:373
+msgid "Aucun article pour le moment."
+msgstr "لا توجد مقالات حالياً."
+
+#: .\blog\views.py:79
+msgid "Votre message a bien été envoyé. Nous vous répondrons bientôt 🙏"
+msgstr "تم إرسال رسالتك بنجاح. سنرد عليك قريباً 🙏"
+
+#: .\blog\views.py:128
+msgid "Article créé avec succès!"
+msgstr "تم إنشاء المقال بنجاح!"
+
+#: .\blog\views.py:146
+msgid "Article mis à jour avec succès!"
+msgstr "تم تحديث المقال بنجاح!"
+
+#: .\blog\views.py:161
+msgid "Article supprimé avec succès!"
+msgstr "تم حذف المقال بنجاح!"
+
+#: .\lekamyablog\settings.py:242
+msgid "Français"
+msgstr "Français"
+
+#: .\lekamyablog\settings.py:243
+msgid "English (US)"
+msgstr "English"
+
+#: .\lekamyablog\settings.py:244
+msgid "العربية"
+msgstr "العربية"
+
+#: .\templates\403.html:40
+msgid "Désolé, vous n'avez pas la permission d'accéder à cette page."
+msgstr "عذراً، ليس لديك إذن للوصول إلى هذه الصفحة."
+
+#: .\templates\403.html:41 .\templates\404.html:42
+msgid "Retour à la page d'accueil"
+msgstr "العودة إلى الصفحة الرئيسية"
+
+#: .\templates\404.html:8
+msgid "Page non trouvée"
+msgstr "الصفحة غير موجودة"
+
+#: .\templates\404.html:41
+msgid "Désolé, la page que vous cherchez n'existe pas."
+msgstr "عذراً، الصفحة التي تبحث عنها غير موجودة."
+
+#: .\templates\about.html:5
+msgid "À propos du Dr Lekamya Ngambi Ben-Ido – Médecin au Tchad"
+msgstr "د. ليكاميا نجامبي بن إيدو | طبيب في تشاد – الوقاية ونصائح الصحة"
+
+#: .\templates\about.html:9
+msgid ""
+"Découvrez le parcours, l’expérience et les engagements du Dr Lekamya Ngambi "
+"Ben-Ido, médecin au Tchad, spécialisé en santé publique et prévention."
+msgstr ""
+"اكتشف المسار والخبرات السريرية والتزامات الدكتور ليكاميا نجامبي بن إيدو في "
+"الطب والصحة العامة."
+
+#: .\templates\about.html:19
+msgid "A propos"
+msgstr "عنّي"
+
+#: .\templates\about.html:20
+msgid "De moi"
+msgstr "عنّي"
+
+#: .\templates\about.html:34 .\templates\index.html:36
+msgid "Médecin Généraliste"
+msgstr "طبيب عام"
+
+#: .\templates\about.html:36
+msgid "Passionné par le"
+msgstr "شغوف بـ"
+
+#: .\templates\about.html:36
+msgid "soin des patients"
+msgstr "رعاية المرضى"
+
+#: .\templates\about.html:36
+msgid "qualité de vie"
+msgstr "جودة الحياة"
+
+#: .\templates\about.html:36
+msgid ""
+"j'ai des années d'expérience dans le domaine médical. Mes patients sont "
+"ravis des soins attentifs et des traitements efficaces que je leur offre."
+msgstr ""
+"لدي سنوات من الخبرة في المجال الطبي. مرضاي راضون عن الرعاية الدقيقة "
+"والعلاجات الفعالة التي أقدمها لهم."
+
+#: .\templates\about.html:41
+msgid "Me contacter"
+msgstr "تواصل معي"
+
+#: .\templates\about.html:45
+msgid "Mes competences"
+msgstr "مهاراتي"
+
+#: .\templates\about.html:51
+msgid "Consultation"
+msgstr "استشارة"
+
+#: .\templates\about.html:56
+msgid "Diagnostic"
+msgstr "تشخيص"
+
+#: .\templates\about.html:61
+msgid "Urgences"
+msgstr "طوارئ"
+
+#: .\templates\about.html:66
+msgid "Petite chirurgie"
+msgstr "جراحة بسيطة"
+
+#: .\templates\about.html:71
+msgid "Prise en charge"
+msgstr "المتابعة"
+
+#: .\templates\about.html:76
+msgid "Collaboration"
+msgstr "التعاون"
+
+#: .\templates\about.html:81
+msgid "Compétences en informatique"
+msgstr "مهارات الحاسوب"
+
+#: .\templates\contact.html:5
+msgid "Contactez Dr Lekamya Ngambi Ben-Ido – Médecin au Tchad"
+msgstr ""
+
+#: .\templates\contact.html:9
+msgid ""
+"Prenez contact avec le Dr Lekamya Ngambi Ben-Ido, médecin au Tchad, pour "
+"informations, collaborations médicales ou questions de santé."
+msgstr ""
+"تواصل مع د. ليكاميا نجامبي بن إيدو، طبيب في تشاد، للحصول على المعلومات أو "
+"التعاون الطبي أو الاستفسارات الصحية."
+
+#: .\templates\contact.html:17
+msgid "Discutons ensemble"
+msgstr "دعونا نناقش معاً"
+
+#: .\templates\contact.html:18
+msgid "de votre santé et de vos besoins"
+msgstr "صحتك واحتياجاتك"
+
+#: .\templates\contact.html:32
+msgid "Ecrivez vos noms"
+msgstr "اكتب اسمك"
+
+#: .\templates\contact.html:34
+msgid "Nom complet"
+msgstr "الاسم الكامل"
+
+#: .\templates\contact.html:42
+msgid "Entrez votre Adresse email valide"
+msgstr "أدخل بريدك الإلكتروني الصحيح"
+
+#: .\templates\contact.html:44
+msgid "Adresse Email"
+msgstr "البريد الإلكتروني"
+
+#: .\templates\contact.html:53
+msgid "Sujet de votre message"
+msgstr "موضوع رسالتك"
+
+#: .\templates\contact.html:55
+msgid "Sujet"
+msgstr "الموضوع"
+
+#: .\templates\contact.html:62
+msgid "Écrivez votre message"
+msgstr "أرسل الرسالة"
+
+#: .\templates\contact.html:64
+msgid "Message"
+msgstr "الرسالة"
+
+#: .\templates\contact.html:68
+msgid "Envoyez le message"
+msgstr "أرسل الرسالة"
+
+#: .\templates\includes\footer.html:9 .\templates\includes\header.html:17
+msgid "A propos de moi"
+msgstr "عنّي"
+
+#: .\templates\includes\footer.html:13 .\templates\includes\header.html:21
+msgid "Portfolio"
+msgstr "معرض الأعمال"
+
+#: .\templates\includes\footer.html:17 .\templates\includes\header.html:24
+msgid "Blog"
+msgstr "المدونة"
+
+#: .\templates\includes\footer.html:21 .\templates\includes\header.html:28
+msgid "Contact"
+msgstr "تواصل"
+
+#: .\templates\includes\footer.html:26
+msgid "Transition"
+msgstr "الانتقال"
+
+#: .\templates\includes\header.html:13
+msgid "Accueil"
+msgstr "الصفحة الرئيسية"
+
+#: .\templates\index.html:6
+msgid ""
+"Dr Lekamya Ngambi Ben-Ido | Médecin au Tchad – Prévention & Conseils Santé "
+msgstr "د. ليكاميا نجامبي بن إيدو | طبيب في تشاد – الوقاية ونصائح الصحة"
+
+#: .\templates\index.html:10
+msgid ""
+"Site officiel du Dr Lekamya Ngambi Ben-Ido, médecin au Tchad. Conseils "
+"santé, prévention et blog médical pour l’Afrique."
+msgstr ""
+"الموقع الرسمي للدكتور ليكاميا نجامبي بن إيدو، طبيب في تشاد. نصائح صحية، "
+"الوقاية ومدونة طبية لأفريقيا."
+
+#: .\templates\index.html:38
+msgid "Je suis Médecin,"
+msgstr "أنا طبيب،"
+
+#: .\templates\index.html:39
+msgid ""
+"Dr Lekamya Ngambi Ben-ido diplômé en médecine humaine de l'Université Adam "
+"Barka d'Abéché."
+msgstr ""
+"الدكتور ليكاميا نجامبي بن-إيدو، حاصل على دكتوراه في الطب البشري من جامعة آدم "
+"باركا بأبيشي."
+
+#: .\templates\index.html:40
+msgid ""
+"Passionné d'Art, animé par l'esprit d'aide depuis je me déploie où je peux "
+"du mieux que je pourrais aux côtés de ceux qui ont besoin d'aide."
+msgstr ""
+"متحمس للفن، مدفوع بروح المساعدة، أبذل جهدي لأكون إلى جانب من يحتاج للمساعدة."
+
+#: .\templates\index.html:41
+msgid ""
+"Vous trouverez chez moi un engagement à servir et un désir de s'améliorer."
+msgstr "ستجد عندي التزامًا بالخدمة ورغبة في التطور."
+
+#: .\templates\index.html:42
+msgid "Mes principaux loisirs la musique, la poésie et la philosophie."
+msgstr "هواياتي الرئيسية هي الموسيقى، الشعر والفلسفة."
+
+#: .\templates\index.html:43
+msgid "Ma foi soutient et me fait tenir par la grâce de Dieu."
+msgstr "إيماني يدعمني ويجعلني ثابتًا بفضل الله."
+
+#: .\templates\index.html:44
+msgid ""
+"C'est un plaisir de découvrir et partager avec vous. Soyez la bienvenue."
+msgstr "يسعدني أن أكتشف وأشارك معكم. مرحبًا بكم."
+
+#: .\templates\index.html:72
+msgid "Les Services"
+msgstr "الخدمات"
+
+#: .\templates\index.html:73
+msgid "Que Nous Offrons"
+msgstr "ماذا نقدم"
+
+#: .\templates\index.html:74
+msgid "A la "
+msgstr "في"
+
+#: .\templates\index.html:74
+msgid "clinique Espoir"
+msgstr "عيادة الأمل"
+
+#: .\templates\index.html:81 .\templates\index.html:98
+msgid "Consultation de Médecine Générale"
+msgstr "استشارة الطب العام"
+
+#: .\templates\index.html:85
+msgid ""
+"Prenez soin de votre santé avec des consultations médicales complètes et "
+"personnalisées. Nous sommes là pour vous accompagner dans votre bien-être au "
+"quotidien."
+msgstr ""
+"اعتنِ بصحتك من خلال استشارات طبية شاملة وشخصية. نحن هنا لمرافقتك في رفاهيتك "
+"اليومية."
+
+#: .\templates\index.html:89 .\templates\index.html:142
+#: .\templates\index.html:210 .\templates\index.html:258
+#: .\templates\index.html:302
+msgid "En savoir plus"
+msgstr "المزيد من المعلومات"
+
+#: .\templates\index.html:104
+msgid ""
+"Diagnostic et traitement des maladies courantes (paludisme, typhoide, "
+"grippe, infections, etc.)."
+msgstr ""
+"تشخيص وعلاج الأمراض الشائعة (الملاريا، التيفوئيد، الإنفلونزا، العدوى، إلخ)."
+
+#: .\templates\index.html:109
+msgid "Bilan de santé annuel pour un suivi préventif."
+msgstr "فحص صحي سنوي للمتابعة الوقائية."
+
+#: .\templates\index.html:114
+msgid "Prescription de médicaments et ordonnances adaptées."
+msgstr "وصف الأدوية والوصفات الطبية المناسبة."
+
+#: .\templates\index.html:119
+msgid "Orientation vers des spécialistes si nécessaire."
+msgstr "تحويل إلى الأخصائيين إذا لزم الأمر."
+
+#: .\templates\index.html:124
+msgid "Conseils en nutrition, hygiène de vie et prévention."
+msgstr "نصائح حول التغذية ونمط الحياة والوقاية."
+
+#: .\templates\index.html:134 .\templates\index.html:151
+msgid "Consultations Spécialisées"
+msgstr "استشارات متخصصة"
+
+#: .\templates\index.html:138
+msgid ""
+"Bénéficiez de l'expertise de nos médecins spécialistes pour des diagnostics "
+"précis et des traitements adaptés à vos besoins spécifiques."
+msgstr ""
+"استفد من خبرة أطبائنا المتخصصين للحصول على تشخيصات دقيقة وعلاجات مكيّفة حسب "
+"احتياجاتك الخاصة."
+
+#: .\templates\index.html:157
+msgid "Cardiologie : Prise en charge des maladies cardiaques."
+msgstr "أمراض القلب: معالجة أمراض القلب."
+
+#: .\templates\index.html:162
+msgid "Diabétologie : Gestion du diabète et suivi personnalisé."
+msgstr "طب السكري: إدارة مرض السكري والمتابعة الشخصية."
+
+#: .\templates\index.html:167
+msgid "Pédiatrie : Soins dédiés aux enfants et adolescents."
+msgstr "طب الأطفال: رعاية مخصصة للأطفال والمراهقين."
+
+#: .\templates\index.html:172
+msgid "Traumatologie : Prise en charge des blessures et fractures."
+msgstr "طب الإصابات: معالجة الجروح والكسور."
+
+#: .\templates\index.html:177
+msgid "Urologie : Diagnostic et traitement des troubles urinaires."
+msgstr "جراحة المسالك البولية: تشخيص وعلاج مشاكل الجهاز البولي."
+
+#: .\templates\index.html:182
+msgid "Gynéco-Obstétrique : Suivi gynécologique et obstétrical."
+msgstr "أمراض النساء والتوليد: متابعة النساء والحمل."
+
+#: .\templates\index.html:187
+msgid "Chirurgie générale : Interventions chirurgicales courantes."
+msgstr "الجراحة العامة: عمليات جراحية شائعة."
+
+#: .\templates\index.html:192
+msgid "Gastro-entérologie : Prise en charge des troubles digestifs."
+msgstr "أمراض الجهاز الهضمي: معالجة مشاكل الهضم."
+
+#: .\templates\index.html:202 .\templates\index.html:219
+msgid "Petite Chirurgie"
+msgstr "جراحة بسيطة"
+
+#: .\templates\index.html:206
+msgid ""
+"Interventions chirurgicales mineures réalisées avec précision et sécurité. "
+"Nous prenons en charge les actes de petite chirurgie en toute confiance."
+msgstr ""
+"إجراءات جراحية بسيطة تُجرى بدقة وأمان. نتكفّل بجميع أعمال الجراحة الصغرى بكل "
+"ثقة."
+
+#: .\templates\index.html:225
+msgid "Interventions réalisées sous anesthésie locale pour votre confort."
+msgstr "عمليات تتم تحت التخدير الموضعي لراحتك."
+
+#: .\templates\index.html:230
+msgid "Prise en charge des plaies, abcès, et autres problèmes cutanés."
+msgstr "معالجة الجروح والخراجات والمشاكل الجلدية الأخرى."
+
+#: .\templates\index.html:235
+msgid "Suivi post-opératoire pour une récupération optimale."
+msgstr "متابعة بعد العمليات لضمان تعافي أمثل."
+
+#: .\templates\index.html:240
+msgid ""
+"Équipements stériles et procédures sécurisées pour éviter les infections."
+msgstr "معدات معقمة وإجراءات آمنة لتجنب العدوى."
+
+#: .\templates\index.html:250 .\templates\index.html:267
+msgid "Pathologies Médicales"
+msgstr "الأمراض الطبية"
+
+#: .\templates\index.html:254
+msgid ""
+"Diagnostic, traitement et suivi des pathologies médicales complexes. Nous "
+"vous accompagnons à chaque étape de votre parcours de santé."
+msgstr ""
+"التشخيص والعلاج والمتابعة للحالات الطبية المعقّدة. نرافقك في كل مرحلة من "
+"مسارك الصحي."
+
+#: .\templates\index.html:273
+msgid "Diagnostic précis grâce à des équipements médicaux de pointe."
+msgstr "تشخيص دقيق بفضل أجهزة طبية متقدمة."
+
+#: .\templates\index.html:278
+msgid "Plans de traitement personnalisés pour chaque patient."
+msgstr "خطط علاج مخصصة لكل مريض."
+
+#: .\templates\index.html:283
+msgid ""
+"Suivi régulier pour adapter le traitement en fonction de l'évolution de la "
+"pathologie."
+msgstr "متابعة منتظمة لتكييف العلاج حسب تطور المرض."
+
+#: .\templates\index.html:288
+msgid ""
+"Prise en charge multidisciplinaire (médecins, infirmiers, spécialistes)."
+msgstr "رعاية متعددة التخصصات (أطباء، ممرضون، أخصائيون)."
+
+#: .\templates\index.html:297 .\templates\index.html:308
+msgid "Vaccination"
+msgstr "التطعيم"
+
+#: .\templates\index.html:299
+msgid ""
+"Protégez-vous et protégez vos proches grâce à nos services de vaccination "
+"complète. Nous offrons des vaccins pour tous les âges et toutes les "
+"conditions médicales."
+msgstr ""
+"احمِ نفسك واحمِ أحبّاءك بفضل خدمات التطعيم الشاملة لدينا. نوفر لقاحات لجميع "
+"الأعمار ولكافة الحالات الطبية."
+
+#: .\templates\index.html:312
+msgid "Vaccins disponibles pour les enfants, les adultes et les seniors."
+msgstr "اللقاحات متوفرة للأطفال والبالغين وكبار السن."
+
+#: .\templates\index.html:317
+msgid ""
+"Conseils personnalisés sur les vaccins nécessaires en fonction de votre "
+"profil médical."
+msgstr "نصائح شخصية حول اللقاحات اللازمة وفقًا لحالتك الصحية."
+
+#: .\templates\index.html:322
+msgid "Suivi post-vaccination pour assurer votre sécurité et votre confort."
+msgstr "متابعة ما بعد التطعيم لضمان سلامتك وراحتك."
+
+#: .\templates\index.html:327
+msgid ""
+"Vaccins contre les maladies courantes (poliomelythe, grippe, COVID-19, "
+"hépatite, etc.)."
+msgstr ""
+"اللقاحات ضد الأمراض الشائعة (شلل الأطفال، الإنفلونزا، كوفيد-19، التهاب "
+"الكبد، إلخ)."
+
+#: .\templates\index.html:342
+msgid "Découvrez mes"
+msgstr "اكتشف"
+
+#: .\templates\index.html:342
+msgid "Derniers articles"
+msgstr "أحدث المقالات"
+
+#: .\templates\index.html:385
+msgid "Une question?"
+msgstr "هل لديك سؤال؟"
+
+#: .\templates\index.html:386
+msgid "Contactez-moi"
+msgstr "اتصل بي"
+
+#: .\templates\index.html:389
+msgid "Contactez Moi"
+msgstr "اتصل بي"
+
+#: .\templates\transition.html:19
+msgid "Page de Transition"
+msgstr "صفحة الانتقال"
+
+#: .\templates\transition.html:20
+msgid ""
+"Bienvenue sur la page de transition. Utilisez les boutons ci-dessous pour "
+"naviguer."
+msgstr "مرحبًا بك في صفحة الانتقال. استخدم الأزرار أدناه للتنقل."
+
+#: .\templates\transition.html:23
+msgid "Aller à l'Administration"
+msgstr "الذهاب إلى لوحة الإدارة"
+
+#: .\templates\transition.html:27
+msgid "Créer un Article"
+msgstr "إنشاء مقال"
+
+#: .\templates\transition.html:36
+msgid "Vues"
+msgstr "المشاهدات"
+
+#: .\templates\transition.html:40
+msgid "Utilisateurs"
+msgstr "المستخدمون"
+
+#: .\templates\transition.html:47
+msgid "Le dernier article publié:"
+msgstr "آخر مقال تم نشره:"
+
+#: .\templates\transition.html:50
+msgid "Créé le"
+msgstr "تم الإنشاء في"
+
+#: .\templates\work.html:6
+msgid "Parcours et expériences médicales du Dr Lekamya Ngambi Ben-Ido"
+msgstr "المسار والخبرات الطبية للدكتور ليكاميا نجامبي بن إيدو"
+
+#: .\templates\work.html:10
+msgid ""
+"Découvrez le parcours, les expériences cliniques et les engagements du Dr "
+"Lekamya Ngambi Ben-Ido en médecine et santé publique."
+msgstr ""
+"اكتشف المسار والخبرات السريرية والتزامات الدكتور ليكاميا نجامبي بن إيدو في "
+"الطب والصحة العامة."
+
+#: .\templates\work.html:18
+msgid "Mes Réalisations"
+msgstr "إنجازاتي"
+
+#: .\templates\work.html:19
+msgid "Récentes"
+msgstr "الأخيرة"
+
+#: .\templates\work.html:29
+msgid "Consultation Médicale"
+msgstr "استشارة طبية"
+
+#: .\templates\work.html:30
+msgid "Soins primaires et diagnostics"
+msgstr "الرعاية الأولية والتشخيصات"
+
+#: .\templates\work.html:39
+msgid "Campagne de Vaccination"
+msgstr "حملة التطعيم"
+
+#: .\templates\work.html:40
+msgid "Prévention et santé publique"
+msgstr "الوقاية والصحة العامة"
+
+#: .\templates\work.html:49
+msgid "Bilan de Santé Annuel"
+msgstr "فحص صحي سنوي"
+
+#: .\templates\work.html:50
+msgid "Dépistage et prévention"
+msgstr "الفحص والوقاية"
+
+#: .\templates\work.html:59
+msgid "Prise en Charge des Urgences"
+msgstr "إدارة الطوارئ"
+
+#: .\templates\work.html:60
+msgid "Soins immédiats et efficaces"
+msgstr "رعاية عاجلة وفعالة"
+
+#: .\templates\work.html:69
+msgid "Éducation des Patients"
+msgstr "تثقيف المرضى"
+
+#: .\templates\work.html:70
+msgid "Sensibilisation et prévention"
+msgstr "التوعية والوقاية"
+
+#: .\templates\work.html:79
+msgid "Équipements Modernes"
+msgstr "معدات حديثة"
+
+#: .\templates\work.html:80
+msgid "Technologies de pointe"
+msgstr "تكنولوجيا متقدمة"
+
+#~ msgid "Contactez Dr Ben"
+#~ msgstr "تواصل مع الدكتور بن"

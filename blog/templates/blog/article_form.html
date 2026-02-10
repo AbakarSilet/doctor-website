@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% if form.instance.pk %}{% trans "Modifier" %}{% else %}{% trans "Créer" %}{% endif %} {% trans "un article" %} - Dr Ben{% endblock %}
+
+{% block style %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'css/article_form.css' %}">
+{% endblock style %}
+
+{% block content %}
+<section class="article-form-section">
+    <div class="container">
+        <h1 class="section-title">{% if form.instance.pk %}Modifier{% else %}Créer{% endif %} un article</h1>
+        <p class="section-subtitle">
+            {% if form.instance.pk %}
+                {% trans "Mettez à jour les informations de votre article." %}
+            {% else %}
+                {% trans "Partagez vos connaissances en rédigeant un nouvel article." %} 
+            {% endif %}
+        </p>
+
+        <form method="post" enctype="multipart/form-data" class="article-form">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="{{ form.titre.id_for_label }}">{% trans "Titre" %}</label>
+                {{ form.titre }}
+                {% if form.titre.errors %}
+                    <div class="error-message">{{ form.titre.errors }}</div>
+                {% endif %}
+            </div>
+
+            <div class="form-group">
+                <label for="{{ form.contenu.id_for_label }}">{% trans "Contenu" %}</label>
+                {{ form.contenu }}
+                {% if form.contenu.errors %}
+                    <div class="error-message">{{ form.contenu.errors }}</div>
+                {% endif %}
+            </div>
+
+            <div class="form-group">
+                <label for="{{ form.image.id_for_label }}">{% trans "Image" %}</label>
+                {{ form.image }}
+                {% if form.image.errors %}
+                    <div class="error-message">{{ form.image.errors }}</div>
+                {% endif %}
+            </div>
+
+            <div class="form-group">
+                <label for="{{ form.video.id_for_label }}">{% trans "Vidéo" %}</label>
+                {{ form.video }}
+                {% if form.video.errors %}
+                    <div class="error-message">{{ form.video.errors }}</div>
+                {% endif %}
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                    {% if form.instance.pk %}{% trans "Mettre à jour" %}{% else %}{% trans "Créer" %}{% endif %}
+                </button>
+                <a href="{% url 'article_list' %}" class="btn btn-secondary">{% trans "Annuler" %}</a>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

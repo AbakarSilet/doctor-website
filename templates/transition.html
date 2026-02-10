@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+
+{% block title %}
+   transition
+{% endblock title %}
+
+{% block style %}
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'css/transition.css' %}">
+
+{% endblock style %}
+
+{% block content %}
+<br> <br>
+<div class="container">
+    <h1>{% trans "Page de Transition" %}</h1>
+    <p>{% trans "Bienvenue sur la page de transition. Utilisez les boutons ci-dessous pour naviguer." %}</p>
+
+    <a href="{% url 'admin:index' %}" class="btn btn-primary">
+        {% trans "Aller à l'Administration" %}
+    </a>
+
+    <a href="{% url 'article_create' %}" class="btn btn-primary">
+        {% trans "Créer un Article" %}
+    </a>
+
+    <div class="stats">
+        <div class="stat-item">
+            <h3>{% trans "Articles" %}</h3>
+            <p>{{ nombre_articles }}</p>
+        </div>
+        <div class="stat-item">
+            <h3>{% trans "Vues" %}</h3>
+            <p>{{ nombre_commentaires }}</p>
+        </div>
+        <div class="stat-item">
+            <h3>{% trans "Utilisateurs" %}</h3>
+            <p>{{ nombre_utilisateurs }}</p>
+        </div>
+    </div>
+
+    {% if dernier_article %}
+        <div class="last-article">
+            <p>{% trans "Le dernier article publié:" %}</p>
+            <a href="{% url 'article_detail' dernier_article.slug %}">
+                <h3>{{ dernier_article.titre }}</h3>
+                <p>{% trans "Créé le" %} {{ dernier_article.date_creation|date:"d/M/Y à H\hi" }}</p>
+            </a>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

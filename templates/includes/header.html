@@ -1,0 +1,68 @@
+{% load i18n %}
+
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
+
+<header class="header" id="header">
+   <nav class="nav container">
+      <a href="{% url 'home' %}" class="nav__logo">Dr Ben</a>
+
+      <div class="nav__menu" id="nav-menu">
+         <ul class="nav__list">
+            <li class="nav__item">
+               <a href="{% url 'home' %}" class="nav__link">{% trans "Accueil" %}</a>
+            </li>
+
+            <li class="nav__item">
+               <a href="{% url 'about_us' %}" class="nav__link">{% trans "A propos de moi" %}</a>
+            </li>
+
+            <li class="nav__item">
+               <a href="{% url 'portfolio' %}" class="nav__link">{% trans "Portfolio" %}</a>
+            </li>
+            <li class="nav__item">
+               <a href="{% url 'article_list' %}" class="nav__link">{% trans "Blog" %}</a>
+            </li>
+
+            <li class="nav__item">
+               <a href="{% url 'contact_us' %}" class="nav__link">{% trans "Contact" %}</a>
+            </li>
+            
+            <li class="nav__item nav__lang">
+               <button class="nav__link nav__lang-btn" id="lang-btn">
+                  <i class="ri-global-line"></i>
+                  <i class="ri-arrow-down-s-line"></i>
+               </button>
+               <ul class="nav__lang-dropdown" id="lang-dropdown">
+                  {% for language in languages %}
+                     <li>
+                     <a href="/{{ language.code }}">
+                        {% if language.code == 'fr' %}Français{% elif language.code == 'en' %}English{% elif language.code == 'ar' %}العربية{% endif %}
+                     </a>
+                     </li>
+                  {% endfor %}
+               </ul>
+            </li>
+
+               
+         </ul>
+
+         <!-- Close button -->
+         <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+         </div>
+      </div>
+
+      <div class="nav__actions">
+         <!-- Theme button -->
+         <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+         <!-- Toggle button -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-apps-2-line"></i>
+         </div>
+      </div>
+   </nav>
+</header>
+
+

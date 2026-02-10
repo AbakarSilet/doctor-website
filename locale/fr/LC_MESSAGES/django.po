@@ -1,0 +1,785 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-09 20:33+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\accounts\models.py:33
+msgid "adresse email"
+msgstr ""
+
+#: .\accounts\models.py:34
+msgid "prénom"
+msgstr ""
+
+#: .\accounts\models.py:35
+msgid "nom"
+msgstr ""
+
+#: .\accounts\models.py:37
+msgid "image de profil"
+msgstr ""
+
+#: .\accounts\models.py:49
+msgid "groups"
+msgstr ""
+
+#: .\accounts\models.py:56
+msgid "user permissions"
+msgstr ""
+
+#: .\accounts\templates\accounts\edit_profile.html:123
+msgid "Prénom"
+msgstr ""
+
+#: .\accounts\templates\accounts\edit_profile.html:128
+msgid "Nom"
+msgstr ""
+
+#: .\accounts\templates\accounts\edit_profile.html:133
+msgid "Email"
+msgstr ""
+
+#: .\accounts\templates\accounts\edit_profile.html:138
+msgid "Image de profil"
+msgstr ""
+
+#: .\accounts\templates\accounts\edit_profile.html:146
+msgid "Pas d'image"
+msgstr ""
+
+#: .\accounts\templates\accounts\edit_profile.html:154
+msgid "Choisir une image"
+msgstr ""
+
+#: .\accounts\templates\accounts\password_reset_confirm.html:5
+msgid "Définir un nouveau mot de passe"
+msgstr ""
+
+#: .\accounts\templates\accounts\password_reset_confirm.html:10
+msgid "Changer mon mot de passe"
+msgstr ""
+
+#: .\accounts\templates\accounts\password_reset_email.html:41
+msgid "Réinitialisation de votre mot de passe"
+msgstr ""
+
+#: .\accounts\templates\accounts\password_reset_email.html:43
+msgid "Bonjour"
+msgstr ""
+
+#: .\accounts\templates\accounts\password_reset_email.html:45
+msgid ""
+"Vous recevez cet email car vous avez demandé la réinitialisation du mot de "
+"passe de votre compte sur"
+msgstr ""
+
+#: .\accounts\templates\accounts\password_reset_email.html:47
+msgid ""
+"Veuillez cliquer sur le bouton ci-dessous pour définir un nouveau mot de "
+"passe:"
+msgstr ""
+
+#: .\accounts\templates\accounts\password_reset_email.html:49
+msgid "Réinitialiser mon mot de passe"
+msgstr ""
+
+#: .\accounts\templates\accounts\password_reset_email.html:51
+msgid ""
+"Si le bouton ne fonctionne pas, vous pouvez copier et coller ce lien dans "
+"votre navigateur:"
+msgstr ""
+
+#: .\blog\forms.py:17 .\blog\models.py:51
+msgid "Un article ne peut pas contenir à la fois une image et une vidéo"
+msgstr ""
+
+#: .\blog\models.py:13
+msgid "La taille de l'image ne doit pas dépasser 10MB"
+msgstr ""
+
+#: .\blog\models.py:18
+msgid "La taille de la vidéo ne doit pas dépasser 20MB"
+msgstr ""
+
+#: .\blog\models.py:26
+msgid "Format de fichier non supporté"
+msgstr ""
+
+#: .\blog\models.py:66
+msgid "Article"
+msgstr ""
+
+#: .\blog\models.py:67 .\blog\templates\blog\articles_list.html:21
+#: .\templates\transition.html:32
+msgid "Articles"
+msgstr ""
+
+#: .\blog\models.py:78
+msgid "views"
+msgstr ""
+
+#: .\blog\models.py:97
+msgid "Message de contact"
+msgstr ""
+
+#: .\blog\models.py:98
+msgid "Messages de contact"
+msgstr ""
+
+#: .\blog\templates\blog\article_confirm_delete.html:5
+#: .\blog\templates\blog\article_confirm_delete.html:15
+#: .\blog\templates\blog\article_detail.html:30
+msgid "Supprimer l'article"
+msgstr ""
+
+#: .\blog\templates\blog\article_confirm_delete.html:16
+msgid "Êtes-vous sûr de vouloir supprimer l'article"
+msgstr ""
+
+#: .\blog\templates\blog\article_confirm_delete.html:19
+msgid "Confirmer la suppression"
+msgstr ""
+
+#: .\blog\templates\blog\article_confirm_delete.html:20
+#: .\blog\templates\blog\article_form.html:62
+msgid "Annuler"
+msgstr ""
+
+#: .\blog\templates\blog\article_detail.html:27
+msgid "Modifier l'article"
+msgstr ""
+
+#: .\blog\templates\blog\article_detail.html:56
+#: .\blog\templates\blog\articles_list.html:35 .\templates\index.html:355
+msgid "Votre navigateur ne supporte pas la lecture de vidéos."
+msgstr ""
+
+#: .\blog\templates\blog\article_detail.html:68
+msgid "personnes ont lu cet article"
+msgstr ""
+
+#: .\blog\templates\blog\article_form.html:5
+msgid "Modifier"
+msgstr ""
+
+#: .\blog\templates\blog\article_form.html:5
+#: .\blog\templates\blog\article_form.html:60
+msgid "Créer"
+msgstr ""
+
+#: .\blog\templates\blog\article_form.html:5
+msgid "un article"
+msgstr ""
+
+#: .\blog\templates\blog\article_form.html:18
+msgid "Mettez à jour les informations de votre article."
+msgstr ""
+
+#: .\blog\templates\blog\article_form.html:20
+msgid "Partagez vos connaissances en rédigeant un nouvel article."
+msgstr ""
+
+#: .\blog\templates\blog\article_form.html:27
+msgid "Titre"
+msgstr ""
+
+#: .\blog\templates\blog\article_form.html:35
+msgid "Contenu"
+msgstr ""
+
+#: .\blog\templates\blog\article_form.html:43
+msgid "Image"
+msgstr ""
+
+#: .\blog\templates\blog\article_form.html:51
+msgid "Vidéo"
+msgstr ""
+
+#: .\blog\templates\blog\article_form.html:60
+msgid "Mettre à jour"
+msgstr ""
+
+#: .\blog\templates\blog\articles_list.html:6
+msgid ""
+"Blog médical Afrique – Conseils & Prévention | Dr Lekamya Ngambi Ben-Ido"
+msgstr ""
+
+#: .\blog\templates\blog\articles_list.html:10
+msgid ""
+"Articles médicaux rédigés par un médecin pour sensibiliser à la prévention "
+"et à la santé en Afrique."
+msgstr ""
+
+#: .\blog\templates\blog\articles_list.html:22
+msgid "Découvrez mes derniers articles"
+msgstr ""
+
+#: .\blog\templates\blog\articles_list.html:47 .\templates\index.html:367
+msgid "Lire plus"
+msgstr ""
+
+#: .\blog\templates\blog\articles_list.html:53 .\templates\index.html:373
+msgid "Aucun article pour le moment."
+msgstr ""
+
+#: .\blog\views.py:79
+msgid "Votre message a bien été envoyé. Nous vous répondrons bientôt 🙏"
+msgstr ""
+
+#: .\blog\views.py:128
+msgid "Article créé avec succès!"
+msgstr ""
+
+#: .\blog\views.py:146
+msgid "Article mis à jour avec succès!"
+msgstr ""
+
+#: .\blog\views.py:161
+msgid "Article supprimé avec succès!"
+msgstr ""
+
+#: .\lekamyablog\settings.py:242
+msgid "Français"
+msgstr ""
+
+#: .\lekamyablog\settings.py:243
+msgid "English (US)"
+msgstr ""
+
+#: .\lekamyablog\settings.py:244
+msgid "العربية"
+msgstr ""
+
+#: .\templates\403.html:40
+msgid "Désolé, vous n'avez pas la permission d'accéder à cette page."
+msgstr ""
+
+#: .\templates\403.html:41 .\templates\404.html:42
+msgid "Retour à la page d'accueil"
+msgstr ""
+
+#: .\templates\404.html:8
+msgid "Page non trouvée"
+msgstr ""
+
+#: .\templates\404.html:41
+msgid "Désolé, la page que vous cherchez n'existe pas."
+msgstr ""
+
+#: .\templates\about.html:5
+msgid "À propos du Dr Lekamya Ngambi Ben-Ido – Médecin au Tchad"
+msgstr ""
+
+#: .\templates\about.html:9
+msgid ""
+"Découvrez le parcours, l’expérience et les engagements du Dr Lekamya Ngambi "
+"Ben-Ido, médecin au Tchad, spécialisé en santé publique et prévention."
+msgstr ""
+
+#: .\templates\about.html:19
+msgid "A propos"
+msgstr ""
+
+#: .\templates\about.html:20
+msgid "De moi"
+msgstr ""
+
+#: .\templates\about.html:34 .\templates\index.html:36
+msgid "Médecin Généraliste"
+msgstr ""
+
+#: .\templates\about.html:36
+msgid "Passionné par le"
+msgstr ""
+
+#: .\templates\about.html:36
+msgid "soin des patients"
+msgstr ""
+
+#: .\templates\about.html:36
+msgid "qualité de vie"
+msgstr ""
+
+#: .\templates\about.html:36
+msgid ""
+"j'ai des années d'expérience dans le domaine médical. Mes patients sont "
+"ravis des soins attentifs et des traitements efficaces que je leur offre."
+msgstr ""
+
+#: .\templates\about.html:41
+msgid "Me contacter"
+msgstr ""
+
+#: .\templates\about.html:45
+msgid "Mes competences"
+msgstr ""
+
+#: .\templates\about.html:51
+msgid "Consultation"
+msgstr ""
+
+#: .\templates\about.html:56
+msgid "Diagnostic"
+msgstr ""
+
+#: .\templates\about.html:61
+msgid "Urgences"
+msgstr ""
+
+#: .\templates\about.html:66
+msgid "Petite chirurgie"
+msgstr ""
+
+#: .\templates\about.html:71
+msgid "Prise en charge"
+msgstr ""
+
+#: .\templates\about.html:76
+msgid "Collaboration"
+msgstr ""
+
+#: .\templates\about.html:81
+msgid "Compétences en informatique"
+msgstr ""
+
+#: .\templates\contact.html:5
+msgid "Contactez Dr Lekamya Ngambi Ben-Ido – Médecin au Tchad"
+msgstr ""
+
+#: .\templates\contact.html:9
+msgid ""
+"Prenez contact avec le Dr Lekamya Ngambi Ben-Ido, médecin au Tchad, pour "
+"informations, collaborations médicales ou questions de santé."
+msgstr ""
+
+#: .\templates\contact.html:17
+msgid "Discutons ensemble"
+msgstr ""
+
+#: .\templates\contact.html:18
+msgid "de votre santé et de vos besoins"
+msgstr ""
+
+#: .\templates\contact.html:32
+msgid "Ecrivez vos noms"
+msgstr ""
+
+#: .\templates\contact.html:34
+msgid "Nom complet"
+msgstr ""
+
+#: .\templates\contact.html:42
+msgid "Entrez votre Adresse email valide"
+msgstr ""
+
+#: .\templates\contact.html:44
+msgid "Adresse Email"
+msgstr ""
+
+#: .\templates\contact.html:53
+msgid "Sujet de votre message"
+msgstr ""
+
+#: .\templates\contact.html:55
+msgid "Sujet"
+msgstr ""
+
+#: .\templates\contact.html:62
+msgid "Écrivez votre message"
+msgstr ""
+
+#: .\templates\contact.html:64
+msgid "Message"
+msgstr ""
+
+#: .\templates\contact.html:68
+msgid "Envoyez le message"
+msgstr ""
+
+#: .\templates\includes\footer.html:9 .\templates\includes\header.html:17
+msgid "A propos de moi"
+msgstr ""
+
+#: .\templates\includes\footer.html:13 .\templates\includes\header.html:21
+msgid "Portfolio"
+msgstr ""
+
+#: .\templates\includes\footer.html:17 .\templates\includes\header.html:24
+msgid "Blog"
+msgstr ""
+
+#: .\templates\includes\footer.html:21 .\templates\includes\header.html:28
+msgid "Contact"
+msgstr ""
+
+#: .\templates\includes\footer.html:26
+msgid "Transition"
+msgstr ""
+
+#: .\templates\includes\header.html:13
+msgid "Accueil"
+msgstr ""
+
+#: .\templates\index.html:6
+msgid ""
+"Dr Lekamya Ngambi Ben-Ido | Médecin au Tchad – Prévention & Conseils Santé "
+msgstr ""
+
+#: .\templates\index.html:10
+msgid ""
+"Site officiel du Dr Lekamya Ngambi Ben-Ido, médecin au Tchad. Conseils "
+"santé, prévention et blog médical pour l’Afrique."
+msgstr ""
+
+#: .\templates\index.html:38
+msgid "Je suis Médecin,"
+msgstr ""
+
+#: .\templates\index.html:39
+msgid ""
+"Dr Lekamya Ngambi Ben-ido diplômé en médecine humaine de l'Université Adam "
+"Barka d'Abéché."
+msgstr ""
+
+#: .\templates\index.html:40
+msgid ""
+"Passionné d'Art, animé par l'esprit d'aide depuis je me déploie où je peux "
+"du mieux que je pourrais aux côtés de ceux qui ont besoin d'aide."
+msgstr ""
+
+#: .\templates\index.html:41
+msgid ""
+"Vous trouverez chez moi un engagement à servir et un désir de s'améliorer."
+msgstr ""
+
+#: .\templates\index.html:42
+msgid "Mes principaux loisirs la musique, la poésie et la philosophie."
+msgstr ""
+
+#: .\templates\index.html:43
+msgid "Ma foi soutient et me fait tenir par la grâce de Dieu."
+msgstr ""
+
+#: .\templates\index.html:44
+msgid ""
+"C'est un plaisir de découvrir et partager avec vous. Soyez la bienvenue."
+msgstr ""
+
+#: .\templates\index.html:72
+msgid "Les Services"
+msgstr ""
+
+#: .\templates\index.html:73
+msgid "Que Nous Offrons"
+msgstr ""
+
+#: .\templates\index.html:74
+msgid "A la "
+msgstr ""
+
+#: .\templates\index.html:74
+msgid "clinique Espoir"
+msgstr ""
+
+#: .\templates\index.html:81 .\templates\index.html:98
+msgid "Consultation de Médecine Générale"
+msgstr ""
+
+#: .\templates\index.html:85
+msgid ""
+"Prenez soin de votre santé avec des consultations médicales complètes et "
+"personnalisées. Nous sommes là pour vous accompagner dans votre bien-être au "
+"quotidien."
+msgstr ""
+
+#: .\templates\index.html:89 .\templates\index.html:142
+#: .\templates\index.html:210 .\templates\index.html:258
+#: .\templates\index.html:302
+msgid "En savoir plus"
+msgstr ""
+
+#: .\templates\index.html:104
+msgid ""
+"Diagnostic et traitement des maladies courantes (paludisme, typhoide, "
+"grippe, infections, etc.)."
+msgstr ""
+
+#: .\templates\index.html:109
+msgid "Bilan de santé annuel pour un suivi préventif."
+msgstr ""
+
+#: .\templates\index.html:114
+msgid "Prescription de médicaments et ordonnances adaptées."
+msgstr ""
+
+#: .\templates\index.html:119
+msgid "Orientation vers des spécialistes si nécessaire."
+msgstr ""
+
+#: .\templates\index.html:124
+msgid "Conseils en nutrition, hygiène de vie et prévention."
+msgstr ""
+
+#: .\templates\index.html:134 .\templates\index.html:151
+msgid "Consultations Spécialisées"
+msgstr ""
+
+#: .\templates\index.html:138
+msgid ""
+"Bénéficiez de l'expertise de nos médecins spécialistes pour des diagnostics "
+"précis et des traitements adaptés à vos besoins spécifiques."
+msgstr ""
+
+#: .\templates\index.html:157
+msgid "Cardiologie : Prise en charge des maladies cardiaques."
+msgstr ""
+
+#: .\templates\index.html:162
+msgid "Diabétologie : Gestion du diabète et suivi personnalisé."
+msgstr ""
+
+#: .\templates\index.html:167
+msgid "Pédiatrie : Soins dédiés aux enfants et adolescents."
+msgstr ""
+
+#: .\templates\index.html:172
+msgid "Traumatologie : Prise en charge des blessures et fractures."
+msgstr ""
+
+#: .\templates\index.html:177
+msgid "Urologie : Diagnostic et traitement des troubles urinaires."
+msgstr ""
+
+#: .\templates\index.html:182
+msgid "Gynéco-Obstétrique : Suivi gynécologique et obstétrical."
+msgstr ""
+
+#: .\templates\index.html:187
+msgid "Chirurgie générale : Interventions chirurgicales courantes."
+msgstr ""
+
+#: .\templates\index.html:192
+msgid "Gastro-entérologie : Prise en charge des troubles digestifs."
+msgstr ""
+
+#: .\templates\index.html:202 .\templates\index.html:219
+msgid "Petite Chirurgie"
+msgstr ""
+
+#: .\templates\index.html:206
+msgid ""
+"Interventions chirurgicales mineures réalisées avec précision et sécurité. "
+"Nous prenons en charge les actes de petite chirurgie en toute confiance."
+msgstr ""
+
+#: .\templates\index.html:225
+msgid "Interventions réalisées sous anesthésie locale pour votre confort."
+msgstr ""
+
+#: .\templates\index.html:230
+msgid "Prise en charge des plaies, abcès, et autres problèmes cutanés."
+msgstr ""
+
+#: .\templates\index.html:235
+msgid "Suivi post-opératoire pour une récupération optimale."
+msgstr ""
+
+#: .\templates\index.html:240
+msgid ""
+"Équipements stériles et procédures sécurisées pour éviter les infections."
+msgstr ""
+
+#: .\templates\index.html:250 .\templates\index.html:267
+msgid "Pathologies Médicales"
+msgstr ""
+
+#: .\templates\index.html:254
+msgid ""
+"Diagnostic, traitement et suivi des pathologies médicales complexes. Nous "
+"vous accompagnons à chaque étape de votre parcours de santé."
+msgstr ""
+
+#: .\templates\index.html:273
+msgid "Diagnostic précis grâce à des équipements médicaux de pointe."
+msgstr ""
+
+#: .\templates\index.html:278
+msgid "Plans de traitement personnalisés pour chaque patient."
+msgstr ""
+
+#: .\templates\index.html:283
+msgid ""
+"Suivi régulier pour adapter le traitement en fonction de l'évolution de la "
+"pathologie."
+msgstr ""
+
+#: .\templates\index.html:288
+msgid ""
+"Prise en charge multidisciplinaire (médecins, infirmiers, spécialistes)."
+msgstr ""
+
+#: .\templates\index.html:297 .\templates\index.html:308
+msgid "Vaccination"
+msgstr ""
+
+#: .\templates\index.html:299
+msgid ""
+"Protégez-vous et protégez vos proches grâce à nos services de vaccination "
+"complète. Nous offrons des vaccins pour tous les âges et toutes les "
+"conditions médicales."
+msgstr ""
+
+#: .\templates\index.html:312
+msgid "Vaccins disponibles pour les enfants, les adultes et les seniors."
+msgstr ""
+
+#: .\templates\index.html:317
+msgid ""
+"Conseils personnalisés sur les vaccins nécessaires en fonction de votre "
+"profil médical."
+msgstr ""
+
+#: .\templates\index.html:322
+msgid "Suivi post-vaccination pour assurer votre sécurité et votre confort."
+msgstr ""
+
+#: .\templates\index.html:327
+msgid ""
+"Vaccins contre les maladies courantes (poliomelythe, grippe, COVID-19, "
+"hépatite, etc.)."
+msgstr ""
+
+#: .\templates\index.html:342
+msgid "Découvrez mes"
+msgstr ""
+
+#: .\templates\index.html:342
+msgid "Derniers articles"
+msgstr ""
+
+#: .\templates\index.html:385
+msgid "Une question?"
+msgstr ""
+
+#: .\templates\index.html:386
+msgid "Contactez-moi"
+msgstr ""
+
+#: .\templates\index.html:389
+msgid "Contactez Moi"
+msgstr ""
+
+#: .\templates\transition.html:19
+msgid "Page de Transition"
+msgstr ""
+
+#: .\templates\transition.html:20
+msgid ""
+"Bienvenue sur la page de transition. Utilisez les boutons ci-dessous pour "
+"naviguer."
+msgstr ""
+
+#: .\templates\transition.html:23
+msgid "Aller à l'Administration"
+msgstr ""
+
+#: .\templates\transition.html:27
+msgid "Créer un Article"
+msgstr ""
+
+#: .\templates\transition.html:36
+msgid "Vues"
+msgstr ""
+
+#: .\templates\transition.html:40
+msgid "Utilisateurs"
+msgstr ""
+
+#: .\templates\transition.html:47
+msgid "Le dernier article publié:"
+msgstr ""
+
+#: .\templates\transition.html:50
+msgid "Créé le"
+msgstr ""
+
+#: .\templates\work.html:6
+msgid "Parcours et expériences médicales du Dr Lekamya Ngambi Ben-Ido"
+msgstr ""
+
+#: .\templates\work.html:10
+msgid ""
+"Découvrez le parcours, les expériences cliniques et les engagements du Dr "
+"Lekamya Ngambi Ben-Ido en médecine et santé publique."
+msgstr ""
+
+#: .\templates\work.html:18
+msgid "Mes Réalisations"
+msgstr ""
+
+#: .\templates\work.html:19
+msgid "Récentes"
+msgstr ""
+
+#: .\templates\work.html:29
+msgid "Consultation Médicale"
+msgstr ""
+
+#: .\templates\work.html:30
+msgid "Soins primaires et diagnostics"
+msgstr ""
+
+#: .\templates\work.html:39
+msgid "Campagne de Vaccination"
+msgstr ""
+
+#: .\templates\work.html:40
+msgid "Prévention et santé publique"
+msgstr ""
+
+#: .\templates\work.html:49
+msgid "Bilan de Santé Annuel"
+msgstr ""
+
+#: .\templates\work.html:50
+msgid "Dépistage et prévention"
+msgstr ""
+
+#: .\templates\work.html:59
+msgid "Prise en Charge des Urgences"
+msgstr ""
+
+#: .\templates\work.html:60
+msgid "Soins immédiats et efficaces"
+msgstr ""
+
+#: .\templates\work.html:69
+msgid "Éducation des Patients"
+msgstr ""
+
+#: .\templates\work.html:70
+msgid "Sensibilisation et prévention"
+msgstr ""
+
+#: .\templates\work.html:79
+msgid "Équipements Modernes"
+msgstr ""
+
+#: .\templates\work.html:80
+msgid "Technologies de pointe"
+msgstr ""
