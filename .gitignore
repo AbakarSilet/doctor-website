@@ -15,6 +15,7 @@ media/
 staticfiles/
 fixtures/
 
+
 # =========================
 # Environment variables
 # =========================
@@ -35,6 +36,14 @@ fixtures/
 # Project specific
 # =========================
 frontend/
+venv/
 .tmp.driveupload/
 todo.txt
 A faire.txt
+brou.py
+
+# =========================
+# Docker
+# =========================
+docker-compose.yml
+dockerfile

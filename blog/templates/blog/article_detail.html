@@ -42,30 +42,47 @@
         
         <div class="article-body">
             {{ article.contenu|safe|linebreaks }}
-            
+
             {% if article.image %}
-                <div class="article-image">
-                    <img src="{{ article.image.url }}" alt="{{ article.titre }}">
+            <figure class="media-block media-block--image">
+                <div class="media-block__inner">
+                    <img src="{{ article.image.url }}" alt="{{ article.titre }}" loading="lazy">
+                    <div class="media-block__overlay"></div>
                 </div>
+                {% if article.titre %}
+                <figcaption class="media-block__caption">
+                    <span class="media-block__caption-icon">◈</span>
+                    {{ article.titre }}
+                </figcaption>
+                {% endif %}
+            </figure>
             {% endif %}
-            
+
             {% if article.video %}
-                <div class="article-video">
-                    <video controls>
+            <figure class="media-block media-block--video">
+                <div class="media-block__inner">
+                    <video controls preload="metadata" playsinline>
                         <source src="{{ article.video.url }}" type="video/mp4">
                         {% trans "Votre navigateur ne supporte pas la lecture de vidéos." %}
                     </video>
                 </div>
+            </figure>
             {% endif %}
         </div>
-
         <!-- Bouton Like -->
         <div class="like-section">
             <button class="like-button {% if request.user in article.likes.all %}liked{% endif %}" 
                     id="likeButton" 
                     data-article-slug="{{ article.slug }}">
                 <i class="fa-solid fa-eye"></i>
-                <span id="likeCount">{{ article.vues }} {% trans "personnes ont lu cet article" %}</span>
+                <span id="likeCount">
+                    {{ article.vues }} 
+                    {% blocktrans count vues=article.vues %}
+                        personne a lu cet article
+                    {% plural %}
+                        personnes ont lu cet article
+                    {% endblocktrans %}
+                </span>            
             </button>
         </div>
 

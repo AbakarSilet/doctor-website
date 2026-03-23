@@ -4,7 +4,9 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
-from django.db.models import F
+from django.db.models import F  
+from django.db import transaction
+
 
 
 from .utils import get_client_ip
@@ -95,20 +97,18 @@ def article_detail(request, slug):
     ip = get_client_ip(request)
 
     if ip:
-        vue_existe = ArticleView.objects.filter(
-            article=article,
-            ip_address=ip
-        ).exists()
-
-        if not vue_existe:
-            ArticleView.objects.create(
+        with transaction.atomic():
+            vue_creee, created = ArticleView.objects.get_or_create(
                 article=article,
                 ip_address=ip
             )
 
-            Article.objects.filter(id=article.id).update(
-                vues=F('vues') + 1
-            )
+            if created:
+                Article.objects.filter(id=article.id).update(
+                    vues=F('vues') + 1
+                )
+                article.refresh_from_db()
+
     if request.LANGUAGE_CODE != "fr":
         return redirect(f"/fr/article/{slug}/")
     
