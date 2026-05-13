@@ -1,0 +1,77 @@
+/* ================================
+   ADMIN THEME (Jazzmin)
+   ================================ */
+
+:root {
+    --hue: 162;
+
+    /* Couleur principale admin */
+    --admin-primary: hsl(var(--hue), 90%, 40%);
+    --admin-primary-alt: hsl(var(--hue), 82%, 36%);
+    --admin-primary-light: hsl(var(--hue), 40%, 90%);
+}
+
+/* ===== Header ===== */
+.navbar-dark {
+    background-color: var(--admin-primary) !important;
+}
+
+/* ===== Sidebar ===== */
+.main-sidebar {
+    background-color: #0f172a !important;
+    /* slate */
+}
+
+.main-sidebar .nav-link.active {
+    background-color: var(--admin-primary) !important;
+    color: #fff !important;
+}
+
+.main-sidebar .nav-link:hover {
+    background-color: var(--admin-primary-alt) !important;
+}
+
+/* ===== Boutons ===== */
+.btn-primary,
+.btn-success {
+    background-color: var(--admin-primary) !important;
+    border-color: var(--admin-primary) !important;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+    background-color: var(--admin-primary-alt) !important;
+}
+
+/* ===== Liens ===== */
+a {
+    color: var(--admin-primary);
+}
+
+a:hover {
+    color: var(--admin-primary-alt);
+}
+
+/* ===== Badges ===== */
+.badge-primary {
+    background-color: var(--admin-primary) !important;
+}
+
+/* ===== Tables ===== */
+.table thead th {
+    background-color: var(--admin-primary-light);
+    color: #0f172a;
+    font-weight: 600;
+}
+
+/* ===== Cards ===== */
+.card {
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+}
+
+/* ===== Animations ===== */
+.nav-link,
+.btn {
+    transition: all 0.25s ease;
+}

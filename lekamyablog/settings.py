@@ -127,7 +127,7 @@ if IS_PROD:
     CSRF_COOKIE_SECURE = True
     STORAGES = {
         "staticfiles": {
-            "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+            "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
         },
     }
     
