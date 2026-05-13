@@ -33,6 +33,9 @@ def custom_403(request):
     return render(request, '403.html', status=403)
 
 
+def privacy_policy(request):
+    return render(request, 'privacy_policy.html')
+
 @login_required
 @admin_required
 def transition_page(request):

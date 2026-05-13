@@ -20,6 +20,9 @@
              <li>
                 <a href="{% url 'contact_us' %}" class="footer__link">{% trans "Contact" %}</a>
              </li>
+              <li>
+                <a href="{% url 'privacy_policy' %}" class="footer__link">{% trans "Politique de confidentialité" %}</a>
+             </li>
 
              {% if user.groups.all.0.name == 'Admin' %}
              <li>

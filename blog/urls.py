@@ -13,6 +13,7 @@ urlpatterns = [
 
     path('404',views.custom_404,name='404'),
     path('403',views.custom_403,name='403'),
+    path('privacy_policy/', views.privacy_policy, name='privacy_policy'),
     path('transition/', views.transition_page, name='transition_page'),
     path('contact/', views.contact, name='contact_us'),
     path('portfolio/', views.portfolio, name='portfolio'),
