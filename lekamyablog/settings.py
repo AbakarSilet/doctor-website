@@ -26,8 +26,7 @@ ALLOWED_HOSTS = [
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    # 'https://lekamyangambibenido.up.railway.app',
-    # 'https://*.railway.app'
+    'https://docteurlekamya.up.railway.app'
 ]
 
 
