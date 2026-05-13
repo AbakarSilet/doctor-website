@@ -6,6 +6,7 @@ from django.core.exceptions import ValidationError
 from django.utils.translation import gettext_lazy as _
 from django.db.models import F  
 from django.db import transaction
+from django.http import HttpResponse
 
 
 
@@ -165,3 +166,8 @@ def article_delete(request, slug):
         return redirect('article_list')
     return render(request, 'blog/article_confirm_delete.html', {'article': article})
 
+
+
+def robots_txt(request):
+    content = "User-agent: *\nAllow: /\nSitemap: https://docteurlekamya.com/sitemap.xml"
+    return HttpResponse(content, content_type="text/plain")
