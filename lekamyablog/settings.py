@@ -73,10 +73,9 @@ AUTH_USER_MODEL = 'accounts.User'
 LOGIN_URL = 'accounts:login'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
-# Durée de session par défaut
-# SESSION_COOKIE_AGE = 60 * 60 * 24 * 7 * 2  # 2 semaines
-# # Durée de session prolongée pour "Se souvenir de moi"
-# ACCOUNT_SESSION_REMEMBER = True
+
+SESSION_COOKIE_AGE = 60 * 60 * 24 * 30
+SESSION_SAVE_EVERY_REQUEST = True
 
 handler404 = 'blog.views.custom_404' 
 handler403 = 'blog.views.custom_403'
