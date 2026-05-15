@@ -13,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-ENV = os.getenv("ENV", "Dev")  # "Dev" par défaut
+ENV = os.getenv("ENV", "Dev")
 IS_PROD = ENV == "Prod"
 
 DEBUG = not IS_PROD
@@ -197,23 +197,92 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 JAZZMIN_SETTINGS = {
+    # Branding
     "site_title": "Dr Lekamya Ngambi BenIdo",
-    "site_header": "Administration du site",
-    "site_logo": "assets/img/favicon.png",
-    "theme": "slate",
+    "site_header": "Espace Administration",
+    "site_brand": "Dr Lekamya",
+    "site_logo": "images/about_stethoscope.png",
+    "site_logo_classes": "img-circle elevation-3",
+    "site_icon": "images/about_stethoscope.png",
+    "welcome_sign": "Bienvenue dans l'espace d'administration",
+    "copyright": "© 2026 Dr. Lekamya Ngambi BenIdo — Développé par Abakarix4",
 
+    # UI
+    "theme": "darkly",
+    "dark_mode_theme": "darkly",
+    "button_classes": {
+        "primary": "btn-primary",
+        "secondary": "btn-outline-secondary",
+        "info": "btn-info",
+        "warning": "btn-warning",
+        "danger": "btn-danger",
+        "success": "btn-success",
+    },
+
+    # Navigation
     "navigation_expanded": True,
+    "hide_apps": [],
+    "hide_models": [],
+    "order_with_respect_to": ["auth", "blog", "accounts"],
 
-    "custom_css": "admin/css/custom_admin.css",
+    # Top menu
+    "topmenu_links": [
+        {"name": "Voir le site", "url": "/", "new_window": True, "icon": "fas fa-globe"},
+        {"name": "Articles", "model": "blog.Article", "icon": "fas fa-book"},
+    ],
 
+    # User menu (coin supérieur droit)
+    "usermenu_links": [
+        {"name": "Voir le site", "url": "/", "new_window": True, "icon": "fas fa-globe"},
+    ],
+
+    # Sidebar
+    "show_sidebar": True,
+    "navigation_expanded": True,
     "icons": {
         "auth": "fas fa-users-cog",
         "auth.user": "fas fa-user",
         "auth.Group": "fas fa-users",
-        "blog.Article": "fas fa-book",
-        "blog.ContactMessage": "fas fa-envelope",
+        "blog.Article": "fas fa-file-medical-alt",
+        "blog.ContactMessage": "fas fa-envelope-open-text",
+        "blog.ArticleView": "fas fa-eye",
+        "accounts": "fas fa-id-card",
     },
+    "default_icon_parents": "fas fa-folder",
+    "default_icon_children": "fas fa-circle",
 
-    "copyright": "Abakarix4dev",
+    # Misc
+    "related_modal_active": True,
+    "custom_css": "admin/css/custom_admin.css",
+    "custom_js": None,
+    "use_google_fonts_cdn": True,
+    "show_ui_builder": False,
 }
 
+JAZZMIN_UI_TWEAKS = {
+    "navbar_small_text": False,
+    "footer_small_text": False,
+    "body_small_text": False,
+    "brand_small_text": False,
+    "brand_colour": "navbar-primary",
+    "accent": "accent-primary",
+    "navbar": "navbar-dark",
+    "no_navbar_border": True,
+    "navbar_fixed": True,
+    "layout_boxed": False,
+    "footer_fixed": False,
+    "sidebar_fixed": True,
+    "sidebar": "sidebar-dark-primary",
+    "sidebar_nav_small_text": False,
+    "sidebar_disable_expand": False,
+    "sidebar_nav_child_indent": True,
+    "sidebar_nav_compact_style": False,
+    "sidebar_nav_legacy_style": False,
+    "sidebar_nav_flat_style": False,
+    "theme": "darkly",
+    "dark_mode_theme": "darkly",
+    "button_classes": {
+        "primary": "btn-primary",
+        "secondary": "btn-outline-secondary",
+    },
+}

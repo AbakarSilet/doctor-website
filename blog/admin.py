@@ -2,7 +2,6 @@ from django.contrib import admin
 from .models import Article , ContactMessage
 
 
-
 class ArticleAdmin(admin.ModelAdmin):
     list_display = ('titre', 'date_creation')
     prepopulated_fields = {'slug': ('titre',)}

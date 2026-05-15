@@ -21,7 +21,7 @@ urlpatterns = [
 
 # URLs traduites → préfixées par /fr/ /en-us/ /ar/
 urlpatterns += i18n_patterns(
-    path('admin/', admin.site.urls),     
+    path('gestion_articles/', admin.site.urls),     
     path('', include('blog.urls')),   
         
 )
