@@ -1,1 +1,1 @@
-web: python manage.py collectstatic --noinput && gunicorn lekamyablog.wsgi --bind 0.0.0.0:$PORT --workers 3 --timeout 120 --log-level debug
+web: python manage.py check && python manage.py collectstatic --noinput && gunicorn lekamyablog.wsgi --bind 0.0.0.0:$PORT --workers 1 --timeout 120 --log-level debug
