@@ -214,9 +214,9 @@ JAZZMIN_SETTINGS = {
     "site_title": "Dr Lekamya Ngambi BenIdo",
     "site_header": "Espace Administration",
     "site_brand": "Dr Lekamya",
-    "site_logo": "images/about_stethoscope.png",
+    "site_logo": "images/logoBG.png",
     "site_logo_classes": "img-circle elevation-3",
-    "site_icon": "images/about_stethoscope.png",
+    "site_icon": "images/favicon.ico",
     "welcome_sign": "Bienvenue dans l'espace d'administration",
     "copyright": "© 2026 Dr. Lekamya Ngambi BenIdo — Développé par Abakarix4",
 

@@ -7,9 +7,6 @@ from django.utils.translation import gettext_lazy as _
 from django.db.models import F  
 from django.db import transaction
 from django.http import HttpResponse
-
-
-
 from .utils import get_client_ip
 from accounts.models import User
 from .forms import ArticleForm
