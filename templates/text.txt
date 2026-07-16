@@ -1,0 +1,30 @@
+msgid "Rendre accessible la compréhension des problèmes de santé récurrents et les questions d'ordre général sur des sujets particuliers."
+msgstr "Make it easier to understand recurring health issues and general questions on specific topics."
+
+msgid "Sensibiliser la population sur des sujets médicaux d'ordre public, informer et vulgariser la connaissance médicale sur des thèmes récurrents de santé, conseiller et contribuer au renforcement de la compréhension des problèmes de santé."
+msgstr "Raise public awareness on public health topics, inform and share medical knowledge on recurring health themes, and advise on strengthening the understanding of health issues."
+
+msgid "En partenariat avec des organismes sur place sur des thématiques importantes et d'usage public."
+msgstr "In partnership with local organizations, on important topics of public interest."
+
+msgid "Exposé-Débat et Partages"
+msgstr "Talks, Debates & Discussions"
+
+msgid "Discussion ouverte sur des thèmes de santé publique."
+msgstr "Open discussion on public health topics."
+
+
+msgid "Rendre accessible la compréhension des problèmes de santé récurrents et les questions d'ordre général sur des sujets particuliers."
+msgstr "إتاحة فهم المشاكل الصحية المتكررة والمسائل العامة المتعلقة بمواضيع محددة."
+
+msgid "Sensibiliser la population sur des sujets médicaux d'ordre public, informer et vulgariser la connaissance médicale sur des thèmes récurrents de santé, conseiller et contribuer au renforcement de la compréhension des problèmes de santé."
+msgstr "توعية السكان بمواضيع طبية ذات طابع عام، ونشر المعرفة الطبية حول المواضيع الصحية المتكررة، وتقديم المشورة للمساهمة في تعزيز فهم المشاكل الصحية."
+
+msgid "En partenariat avec des organismes sur place sur des thématiques importantes et d'usage public."
+msgstr "بالشراكة مع منظمات محلية حول مواضيع هامة ذات فائدة عامة."
+
+msgid "Exposé-Débat et Partages"
+msgstr "عروض ونقاشات ومشاركات"
+
+msgid "Discussion ouverte sur des thèmes de santé publique."
+msgstr "نقاش مفتوح حول مواضيع الصحة العامة."

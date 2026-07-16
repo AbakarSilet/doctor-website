@@ -10,22 +10,46 @@
       <div class="nav__menu" id="nav-menu">
          <ul class="nav__list">
             <li class="nav__item">
-               <a href="{% url 'home' %}" class="nav__link">{% trans "Accueil" %}</a>
+               <a href="{% url 'home' %}" class="nav__link{% if request.resolver_match.url_name == 'home' %} active-link{% endif %}">{% trans "Accueil" %}</a>
+            </li>
+
+            <li class="nav__item nav__dropdown">
+               <button class="nav__link nav__dropdown-btn{% if request.resolver_match.url_name == 'services' %} active-link{% endif %}" id="services-btn">
+                  {% trans "Services" %}
+                  <i class="ri-arrow-down-s-line"></i>
+               </button>
+               <ul class="nav__dropdown-menu" id="services-dropdown">
+                  <li>
+                     <a href="{% url 'services' %}#consultation-generale">{% trans "Consultation de Médecine Générale" %}</a>
+                  </li>
+                  <li>
+                     <a href="{% url 'services' %}#consultations-specialisees">{% trans "Consultations Spécialisées" %}</a>
+                  </li>
+                  <li>
+                     <a href="{% url 'services' %}#petite-chirurgie">{% trans "Petite Chirurgie" %}</a>
+                  </li>
+                  <li>
+                     <a href="{% url 'services' %}#pathologies-medicales">{% trans "Pathologies Médicales" %}</a>
+                  </li>
+                  <li>
+                     <a href="{% url 'services' %}#vaccination">{% trans "Vaccination" %}</a>
+                  </li>
+               </ul>
             </li>
 
             <li class="nav__item">
-               <a href="{% url 'about_us' %}" class="nav__link">{% trans "A propos de moi" %}</a>
+               <a href="{% url 'about_us' %}" class="nav__link{% if request.resolver_match.url_name == 'about_us' %} active-link{% endif %}">{% trans "A propos de moi" %}</a>
             </li>
 
             <li class="nav__item">
-               <a href="{% url 'portfolio' %}" class="nav__link">{% trans "Portfolio" %}</a>
+               <a href="{% url 'portfolio' %}" class="nav__link{% if request.resolver_match.url_name == 'portfolio' %} active-link{% endif %}">{% trans "Portfolio" %}</a>
             </li>
             <li class="nav__item">
-               <a href="{% url 'article_list' %}" class="nav__link">{% trans "Blog" %}</a>
+               <a href="{% url 'article_list' %}" class="nav__link{% if request.resolver_match.url_name in 'article_list,article_detail' %} active-link{% endif %}">{% trans "Blog" %}</a>
             </li>
 
             <li class="nav__item">
-               <a href="{% url 'contact_us' %}" class="nav__link">{% trans "Contact" %}</a>
+               <a href="{% url 'contact_us' %}" class="nav__link{% if request.resolver_match.url_name == 'contact_us' %} active-link{% endif %}">{% trans "Contact" %}</a>
             </li>
             
             <li class="nav__item nav__lang">
@@ -36,9 +60,14 @@
                <ul class="nav__lang-dropdown" id="lang-dropdown">
                   {% for language in languages %}
                      <li>
-                     <a href="/{{ language.code }}">
-                        {% if language.code == 'fr' %}Français{% elif language.code == 'en' %}English{% elif language.code == 'ar' %}العربية{% endif %}
-                     </a>
+                        <form action="{% url 'set_language' %}" method="post" class="nav__lang-form">
+                           {% csrf_token %}
+                           <input type="hidden" name="language" value="{{ language.code }}">
+                           <input type="hidden" name="next" value="/{{ language.code }}{{ request.path|slice:'3:' }}">
+                           <button type="submit" class="nav__lang-option">
+                              {% if language.code == 'fr' %}Français{% elif language.code == 'en' %}English{% elif language.code == 'ar' %}العربية{% endif %}
+                           </button>
+                        </form>
                      </li>
                   {% endfor %}
                </ul>

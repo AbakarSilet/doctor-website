@@ -18,6 +18,7 @@ urlpatterns = [
     path('contact/', views.contact, name='contact_us'),
     path('portfolio/', views.portfolio, name='portfolio'),
     path('about/', views.about, name='about_us'),
+    path('services/', views.services, name='services'),
     path('send_email/',views.send_email,name='send_email'),
 
     path('api/articles/', ArticleListAPI.as_view(), name='api_articles'),

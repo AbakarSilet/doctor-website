@@ -54,6 +54,9 @@ def home(request):
     articles = Article.objects.all()[:5]  # Affiche les 5 derniers articles
     return render(request, 'index.html',{'articles': articles})
 
+def services(request):
+    return render(request, 'services.html')
+
 
 def about(request):
     return render(request, 'about.html')

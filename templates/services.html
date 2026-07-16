@@ -1,0 +1,316 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}
+{% trans "Services | Dr Lekamya Ngambi Ben-Ido" %}
+{% endblock title %}
+
+{% block meta_description %}
+{% trans "Decouvrez l'ensemble des services medicaux proposes par le Dr Lekamya Ngambi Ben-Ido : consultations generales, consultations specialisees, petite chirurgie, pathologies medicales et vaccination." %}
+{% endblock meta_description %}
+
+{% block content %}
+
+<main class="main">
+   <!--==================== SERVICES ====================-->
+   <section class="services section">
+      <h2 class="section__title">
+         {% trans "Les Services" %} <br>
+         {% trans "Que Nous Offrons" %} <br>
+         {% trans "A la " %}<b>{% trans "clinique Espoir" %}</b>
+      </h2>
+
+      <div class="services__container container grid">
+         <article class="services__card" id="consultation-generale">
+            <!-- Icône et titre -->
+            <i class="ri-stethoscope-line services__icon"></i>
+            <h2 class="services__title">{% trans "Consultation de Médecine Générale" %}</h2>
+
+            <!-- Description courte -->
+            <p class="services__description">
+               {% trans "Prenez soin de votre santé avec des consultations médicales complètes et personnalisées. Nous sommes là pour vous accompagner dans votre bien-être au quotidien." %}
+            </p>
+
+            <!-- Bouton pour ouvrir la modale -->
+            <button class="services__button button">{% trans "En savoir plus" %}</button>
+
+            <!-- Boîte modale -->
+            <div class="services__modal">
+               <div class="services__modal-content">
+                  <!-- Bouton de fermeture -->
+                  <i class="ri-close-line services__modal-close"></i>
+
+                  <!-- Titre de la modale -->
+                  <h2 class="services__modal-title">{% trans "Consultation de Médecine Générale" %}</h2>
+
+                  <!-- Liste des détails du service -->
+                  <ul class="services__modal-list grid">
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Diagnostic et traitement des maladies courantes (paludisme, typhoide, grippe, infections, etc.)." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Bilan de santé annuel pour un suivi préventif." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Prescription de médicaments et ordonnances adaptées." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Orientation vers des spécialistes si nécessaire." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Conseils en nutrition, hygiène de vie et prévention." %}
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </article>
+
+         <article class="services__card" id="consultations-specialisees">
+            <!-- Icône et titre -->
+            <i class="ri-microscope-line services__icon"></i>
+            <h2 class="services__title">{% trans "Consultations Spécialisées" %}</h2>
+
+            <!-- Description courte -->
+            <p class="services__description">
+               {% trans "Bénéficiez de l'expertise de nos médecins spécialistes pour des diagnostics précis et des traitements adaptés à vos besoins spécifiques." %}
+            </p>
+
+            <!-- Bouton pour ouvrir la modale -->
+            <button class="services__button button">{% trans "En savoir plus" %}</button>
+
+            <!-- Boîte modale -->
+            <div class="services__modal">
+               <div class="services__modal-content">
+                  <!-- Bouton de fermeture -->
+                  <i class="ri-close-line services__modal-close"></i>
+
+                  <!-- Titre de la modale -->
+                  <h2 class="services__modal-title">{% trans "Consultations Spécialisées" %}</h2>
+
+                  <!-- Liste des spécialités -->
+                  <ul class="services__modal-list grid">
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Cardiologie : Prise en charge des maladies cardiaques." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Diabétologie : Gestion du diabète et suivi personnalisé." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Pédiatrie : Soins dédiés aux enfants et adolescents." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Traumatologie : Prise en charge des blessures et fractures." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Urologie : Diagnostic et traitement des troubles urinaires." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Gynéco-Obstétrique : Suivi gynécologique et obstétrical." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Chirurgie générale : Interventions chirurgicales courantes." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Gastro-entérologie : Prise en charge des troubles digestifs." %}
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </article>
+
+         <article class="services__card" id="petite-chirurgie">
+            <!-- Icône et titre -->
+            <i class="ri-scissors-line services__icon"></i>
+            <h2 class="services__title">{% trans "Petite Chirurgie" %}</h2>
+
+            <!-- Description courte -->
+            <p class="services__description">
+               {% trans "Interventions chirurgicales mineures réalisées avec précision et sécurité. Nous prenons en charge les actes de petite chirurgie en toute confiance." %}
+            </p>
+
+            <!-- Bouton pour ouvrir la modale -->
+            <button class="services__button button">{% trans "En savoir plus" %}</button>
+
+            <!-- Boîte modale -->
+            <div class="services__modal">
+               <div class="services__modal-content">
+                  <!-- Bouton de fermeture -->
+                  <i class="ri-close-line services__modal-close"></i>
+
+                  <!-- Titre de la modale -->
+                  <h2 class="services__modal-title">{% trans "Petite Chirurgie" %}</h2>
+
+                  <!-- Liste des détails du service -->
+                  <ul class="services__modal-list grid">
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Interventions réalisées sous anesthésie locale pour votre confort." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Prise en charge des plaies, abcès, et autres problèmes cutanés." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Suivi post-opératoire pour une récupération optimale." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Équipements stériles et procédures sécurisées pour éviter les infections." %}
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </article>
+
+         <article class="services__card" id="pathologies-medicales">
+            <!-- Icône et titre -->
+            <i class="ri-heart-pulse-line services__icon"></i>
+            <h2 class="services__title">{% trans "Pathologies Médicales" %}</h2>
+
+            <!-- Description courte -->
+            <p class="services__description">
+               {% trans "Diagnostic, traitement et suivi des pathologies médicales complexes. Nous vous accompagnons à chaque étape de votre parcours de santé." %}
+            </p>
+
+            <!-- Bouton pour ouvrir la modale -->
+            <button class="services__button button">{% trans "En savoir plus" %}</button>
+
+            <!-- Boîte modale -->
+            <div class="services__modal">
+               <div class="services__modal-content">
+                  <!-- Bouton de fermeture -->
+                  <i class="ri-close-line services__modal-close"></i>
+
+                  <!-- Titre de la modale -->
+                  <h2 class="services__modal-title">{% trans "Pathologies Médicales" %}</h2>
+
+                  <!-- Liste des détails du service -->
+                  <ul class="services__modal-list grid">
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Diagnostic précis grâce à des équipements médicaux de pointe." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Plans de traitement personnalisés pour chaque patient." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Suivi régulier pour adapter le traitement en fonction de l'évolution de la pathologie." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Prise en charge multidisciplinaire (médecins, infirmiers, spécialistes)." %}
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </article>
+
+         <article class="services__card" id="vaccination">
+            <i class="ri-syringe-line services__icon"></i>
+            <h2 class="services__title">{% trans "Vaccination" %}</h2>
+            <p class="services__description">
+               {% trans "Protégez-vous et protégez vos proches grâce à nos services de vaccination complète. Nous offrons des vaccins pour tous les âges et toutes les conditions médicales." %}
+            </p>
+
+            <button class="services__button button">{% trans "En savoir plus" %}</button>
+            <!-- Modal 3 -->
+            <div class="services__modal">
+               <div class="services__modal-content">
+                  <i class="ri-close-line services__modal-close"></i>
+
+                  <h2 class="services__modal-title">{% trans "Vaccination" %}</h2>
+                  <ul class="services__modal-list grid">
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Vaccins disponibles pour les enfants, les adultes et les seniors." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Conseils personnalisés sur les vaccins nécessaires en fonction de votre profil médical." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Suivi post-vaccination pour assurer votre sécurité et votre confort." %}
+                     </li>
+
+                     <li class="services__modal-item">
+                        <i class="ri-checkbox-circle-line"></i>
+                        {% trans "Vaccins contre les maladies courantes (poliomelythe, grippe, COVID-19, hépatite, etc.)." %}
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </article>
+      </div>
+   </section>
+</main>
+{% endblock content %}
+
+{% block script %}
+{{ block.super }}
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.querySelector(".services__modal");
+  const modalContent = document.querySelector(".services__modal-content");
+  const closeBtn = document.querySelector(".services__modal-close");
+
+  if (closeBtn && modal && modalContent) {
+     /* Fermer avec le bouton */
+     closeBtn.addEventListener("click", () => {
+       modal.classList.remove("active-modal");
+     });
+
+     /* Fermer en cliquant hors du contenu */
+     modal.addEventListener("click", (e) => {
+       if (!modalContent.contains(e.target)) {
+         modal.classList.remove("active-modal");
+       }
+     });
+  }
+
+  /* Si on arrive via une ancre (#vaccination, etc.), on scrolle jusqu'a la carte */
+  if (window.location.hash) {
+     const target = document.querySelector(window.location.hash);
+     if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
+     }
+  }
+});
+</script>
+{% endblock script %}
