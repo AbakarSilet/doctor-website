@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-16 16:22+0100\n"
+"POT-Creation-Date: 2026-07-16 19:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -328,6 +328,10 @@ msgid "soin des patients"
 msgstr "patient care"
 
 #: templates/about.html:36
+msgid "et l'amélioration de la"
+msgstr "and improving "
+
+#: templates/about.html:36
 msgid "qualité de vie"
 msgstr "quality of life"
 
@@ -431,34 +435,38 @@ msgstr "Send message"
 msgid "A propos de moi"
 msgstr "About me"
 
-#: templates/includes/footer.html:13 templates/includes/header.html:45
+#: templates/includes/footer.html:13 templates/includes/header.html:18
+msgid "Services"
+msgstr "Services"
+
+#: templates/includes/footer.html:17 templates/includes/header.html:45
 msgid "Portfolio"
 msgstr "Portfolio"
 
-#: templates/includes/footer.html:17 templates/includes/header.html:48
+#: templates/includes/footer.html:21 templates/includes/header.html:48
 msgid "Blog"
 msgstr "Blog"
 
-#: templates/includes/footer.html:21 templates/includes/header.html:52
+#: templates/includes/footer.html:25 templates/includes/header.html:52
 msgid "Contact"
 msgstr "Contact"
 
-#: templates/includes/footer.html:24 templates/privacy_policy.html:7
+#: templates/includes/footer.html:28 templates/privacy_policy.html:7
 #: templates/privacy_policy.html:73
 msgid "Politique de confidentialité"
 msgstr "Privacy policy"
 
-#: templates/includes/footer.html:29
+#: templates/includes/footer.html:33
 msgid "Transition"
 msgstr "Transition"
+
+#: templates/includes/footer.html:57
+msgid "Tous droits réservés."
+msgstr "All rights reserved."
 
 #: templates/includes/header.html:13
 msgid "Accueil"
 msgstr "Home"
-
-#: templates/includes/header.html:18
-msgid "Services"
-msgstr "Services"
 
 #: templates/includes/header.html:23 templates/services.html:28
 #: templates/services.html:45
@@ -504,48 +512,27 @@ msgid "Présentation"
 msgstr "Introduction"
 
 #: templates/index.html:57
-msgid "Je suis Médecin,"
-msgstr "I am a Doctor,"
-
-#: templates/index.html:58
 msgid ""
-"Dr Lekamya Ngambi Ben-ido diplômé en médecine humaine de l'Université Adam "
-"Barka d'Abéché."
+"Je suis Lekamya Ngambi Ben-ido, diplômé en Médecine générale humaine en "
+"2024, Doctorat d'État, Faculté de Médecine/Université Adam Barka d'Abéché."
 msgstr ""
-"Dr Lekamya Ngambi Ben-ido, graduated in human medicine from Adam Barka "
+"I am Lekamya Ngambi Ben-ido, graduated in General Human Medicine in 2024, "
+"holding a State Doctorate from the Faculty of Medicine, Adam Barka "
 "University of Abéché."
 
 #: templates/index.html:59
-msgid ""
-"Passionné d'Art, animé par l'esprit d'aide depuis je me déploie où je peux "
-"du mieux que je pourrais aux côtés de ceux qui ont besoin d'aide."
-msgstr ""
-"Passionate about Art, driven by the spirit of helping, I dedicate myself "
-"wherever I can to assist those in need to the best of my ability."
+msgid "Centres d'intérêt : "
+msgstr "Interests: "
 
-#: templates/index.html:60
-msgid ""
-"Vous trouverez chez moi un engagement à servir et un désir de s'améliorer."
-msgstr "With me, you will find a commitment to serve and a desire to improve."
-
-#: templates/index.html:61
-msgid "Mes principaux loisirs la musique, la poésie et la philosophie."
-msgstr "My main hobbies are music, poetry, and philosophy."
+#: templates/index.html:59
+msgid "l'art, la poésie et la philosophie."
+msgstr "art, poetry, and philosophy."
 
 #: templates/index.html:62
-msgid "Ma foi soutient et me fait tenir par la grâce de Dieu."
-msgstr "My faith supports me and keeps me going by the grace of God."
-
-#: templates/index.html:63
-msgid ""
-"C'est un plaisir de découvrir et partager avec vous. Soyez la bienvenue."
-msgstr "It is a pleasure to discover and share with you. Welcome."
-
-#: templates/index.html:66
 msgid "Vision"
 msgstr "Vision"
 
-#: templates/index.html:68
+#: templates/index.html:64
 msgid ""
 "Rendre accessible la compréhension des problèmes de santé récurrents et les "
 "questions d'ordre général sur des sujets particuliers."
@@ -553,19 +540,19 @@ msgstr ""
 "Make it easier to understand recurring health issues and general questions "
 "on specific topics."
 
-#: templates/index.html:78
+#: templates/index.html:74
 msgid "Nos"
 msgstr "Our"
 
-#: templates/index.html:79
+#: templates/index.html:75
 msgid "Activités"
 msgstr "Activities"
 
-#: templates/index.html:85
+#: templates/index.html:81
 msgid "Sensibilisation Communautaire"
 msgstr "Community Awareness"
 
-#: templates/index.html:87
+#: templates/index.html:83
 msgid ""
 "Sensibiliser la population sur des sujets médicaux d'ordre public, informer "
 "et vulgariser la connaissance médicale sur des thèmes récurrents de santé, "
@@ -576,11 +563,11 @@ msgstr ""
 "knowledge on recurring health themes, and advise on strengthening the "
 "understanding of health issues."
 
-#: templates/index.html:93
+#: templates/index.html:89
 msgid "Formations et Ateliers"
 msgstr "Trainings and Workshops"
 
-#: templates/index.html:95
+#: templates/index.html:91
 msgid ""
 "En partenariat avec des organismes sur place sur des thématiques importantes "
 "et d'usage public."
@@ -588,23 +575,23 @@ msgstr ""
 "In partnership with local organizations, on important topics of public "
 "interest."
 
-#: templates/index.html:101
+#: templates/index.html:97
 msgid "Exposé-Débat et Partages"
 msgstr "Talks, Debates & Discussions"
 
-#: templates/index.html:103
+#: templates/index.html:99
 msgid "Discussion ouverte sur des thèmes de santé publique."
 msgstr "Open discussion on public health topics."
 
-#: templates/index.html:113
+#: templates/index.html:109
 msgid "Clause de"
 msgstr "Legal"
 
-#: templates/index.html:114
+#: templates/index.html:110
 msgid "Non Responsabilité"
 msgstr "Disclaimer"
 
-#: templates/index.html:117
+#: templates/index.html:113
 msgid ""
 "Les informations fournies sur ce site sont a titre informatif et ne "
 "remplacent en aucun cas une consultation medicale professionnelle. Le Dr "
@@ -1041,6 +1028,28 @@ msgstr "Modern Equipment"
 #: templates/work.html:80
 msgid "Technologies de pointe"
 msgstr "State-of-the-art technology"
+
+#~ msgid "Je suis Médecin,"
+#~ msgstr "I am a Doctor,"
+
+#~ msgid ""
+#~ "Passionné d'Art, animé par l'esprit d'aide depuis je me déploie où je "
+#~ "peux du mieux que je pourrais aux côtés de ceux qui ont besoin d'aide."
+#~ msgstr ""
+#~ "Passionate about Art, driven by the spirit of helping, I dedicate myself "
+#~ "wherever I can to assist those in need to the best of my ability."
+
+#~ msgid ""
+#~ "Vous trouverez chez moi un engagement à servir et un désir de s'améliorer."
+#~ msgstr ""
+#~ "With me, you will find a commitment to serve and a desire to improve."
+
+#~ msgid "Ma foi soutient et me fait tenir par la grâce de Dieu."
+#~ msgstr "My faith supports me and keeps me going by the grace of God."
+
+#~ msgid ""
+#~ "C'est un plaisir de découvrir et partager avec vous. Soyez la bienvenue."
+#~ msgstr "It is a pleasure to discover and share with you. Welcome."
 
 #~ msgid "personnes ont lu cet article"
 #~ msgstr "people have read this article"

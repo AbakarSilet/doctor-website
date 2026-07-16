@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-16 16:22+0100\n"
+"POT-Creation-Date: 2026-07-16 19:38+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -327,6 +327,10 @@ msgid "soin des patients"
 msgstr "رعاية المرضى"
 
 #: templates/about.html:36
+msgid "et l'amélioration de la"
+msgstr " وتحسين"
+
+#: templates/about.html:36
 msgid "qualité de vie"
 msgstr "جودة الحياة"
 
@@ -430,34 +434,38 @@ msgstr "أرسل الرسالة"
 msgid "A propos de moi"
 msgstr "عنّي"
 
-#: templates/includes/footer.html:13 templates/includes/header.html:45
+#: templates/includes/footer.html:13 templates/includes/header.html:18
+msgid "Services"
+msgstr "الخدمات"
+
+#: templates/includes/footer.html:17 templates/includes/header.html:45
 msgid "Portfolio"
 msgstr "معرض الأعمال"
 
-#: templates/includes/footer.html:17 templates/includes/header.html:48
+#: templates/includes/footer.html:21 templates/includes/header.html:48
 msgid "Blog"
 msgstr "المدونة"
 
-#: templates/includes/footer.html:21 templates/includes/header.html:52
+#: templates/includes/footer.html:25 templates/includes/header.html:52
 msgid "Contact"
 msgstr "تواصل"
 
-#: templates/includes/footer.html:24 templates/privacy_policy.html:7
+#: templates/includes/footer.html:28 templates/privacy_policy.html:7
 #: templates/privacy_policy.html:73
 msgid "Politique de confidentialité"
 msgstr "سياسة الخصوصية"
 
-#: templates/includes/footer.html:29
+#: templates/includes/footer.html:33
 msgid "Transition"
 msgstr "الانتقال"
+
+#: templates/includes/footer.html:57
+msgid "Tous droits réservés."
+msgstr "جميع الحقوق محفوظة."
 
 #: templates/includes/header.html:13
 msgid "Accueil"
 msgstr "الصفحة الرئيسية"
-
-#: templates/includes/header.html:18
-msgid "Services"
-msgstr "الخدمات"
 
 #: templates/includes/header.html:23 templates/services.html:28
 #: templates/services.html:45
@@ -502,66 +510,45 @@ msgid "Présentation"
 msgstr "نبذة"
 
 #: templates/index.html:57
-msgid "Je suis Médecin,"
-msgstr "أنا طبيب،"
-
-#: templates/index.html:58
 msgid ""
-"Dr Lekamya Ngambi Ben-ido diplômé en médecine humaine de l'Université Adam "
-"Barka d'Abéché."
+"Je suis Lekamya Ngambi Ben-ido, diplômé en Médecine générale humaine en "
+"2024, Doctorat d'État, Faculté de Médecine/Université Adam Barka d'Abéché."
 msgstr ""
-"الدكتور ليكاميا نجامبي بن-إيدو، حاصل على دكتوراه في الطب البشري من جامعة آدم "
-"باركا بأبيشي."
+"أنا ليكاميا نغامبي بن-إيدو، حاصل على شهادة الدكتوراه في الطب البشري العام "
+"سنة 2024، ودكتوراه دولة من كلية الطب بجامعة آدم بركة في أبشي."
 
 #: templates/index.html:59
-msgid ""
-"Passionné d'Art, animé par l'esprit d'aide depuis je me déploie où je peux "
-"du mieux que je pourrais aux côtés de ceux qui ont besoin d'aide."
-msgstr ""
-"متحمس للفن، مدفوع بروح المساعدة، أبذل جهدي لأكون إلى جانب من يحتاج للمساعدة."
+msgid "Centres d'intérêt : "
+msgstr "مجالات الاهتمام:"
 
-#: templates/index.html:60
-msgid ""
-"Vous trouverez chez moi un engagement à servir et un désir de s'améliorer."
-msgstr "ستجد عندي التزامًا بالخدمة ورغبة في التطور."
-
-#: templates/index.html:61
-msgid "Mes principaux loisirs la musique, la poésie et la philosophie."
-msgstr "هواياتي الرئيسية هي الموسيقى، الشعر والفلسفة."
+#: templates/index.html:59
+msgid "l'art, la poésie et la philosophie."
+msgstr "الفن، والشعر، والفلسفة."
 
 #: templates/index.html:62
-msgid "Ma foi soutient et me fait tenir par la grâce de Dieu."
-msgstr "إيماني يدعمني ويجعلني ثابتًا بفضل الله."
-
-#: templates/index.html:63
-msgid ""
-"C'est un plaisir de découvrir et partager avec vous. Soyez la bienvenue."
-msgstr "يسعدني أن أكتشف وأشارك معكم. مرحبًا بكم."
-
-#: templates/index.html:66
 msgid "Vision"
 msgstr "الرؤية"
 
-#: templates/index.html:68
+#: templates/index.html:64
 msgid ""
 "Rendre accessible la compréhension des problèmes de santé récurrents et les "
 "questions d'ordre général sur des sujets particuliers."
 msgstr ""
 "إتاحة فهم المشاكل الصحية المتكررة والمسائل العامة المتعلقة بمواضيع محددة."
 
-#: templates/index.html:78
+#: templates/index.html:74
 msgid "Nos"
 msgstr "  "
 
-#: templates/index.html:79
+#: templates/index.html:75
 msgid "Activités"
 msgstr "أنشطتنا"
 
-#: templates/index.html:85
+#: templates/index.html:81
 msgid "Sensibilisation Communautaire"
 msgstr "التوعية المجتمعية"
 
-#: templates/index.html:87
+#: templates/index.html:83
 msgid ""
 "Sensibiliser la population sur des sujets médicaux d'ordre public, informer "
 "et vulgariser la connaissance médicale sur des thèmes récurrents de santé, "
@@ -571,33 +558,33 @@ msgstr ""
 "توعية السكان بمواضيع طبية ذات طابع عام، ونشر المعرفة الطبية حول المواضيع "
 "الصحية المتكررة، وتقديم المشورة للمساهمة في تعزيز فهم المشاكل الصحية."
 
-#: templates/index.html:93
+#: templates/index.html:89
 msgid "Formations et Ateliers"
 msgstr "تدريبات وورش عمل"
 
-#: templates/index.html:95
+#: templates/index.html:91
 msgid ""
 "En partenariat avec des organismes sur place sur des thématiques importantes "
 "et d'usage public."
 msgstr "بالشراكة مع منظمات محلية حول مواضيع هامة ذات فائدة عامة."
 
-#: templates/index.html:101
+#: templates/index.html:97
 msgid "Exposé-Débat et Partages"
 msgstr "عروض ونقاشات ومشاركات"
 
-#: templates/index.html:103
+#: templates/index.html:99
 msgid "Discussion ouverte sur des thèmes de santé publique."
 msgstr "نقاش مفتوح حول مواضيع الصحة العامة."
 
-#: templates/index.html:113
+#: templates/index.html:109
 msgid "Clause de"
 msgstr "إخلاء"
 
-#: templates/index.html:114
+#: templates/index.html:110
 msgid "Non Responsabilité"
 msgstr "المسؤولية"
 
-#: templates/index.html:117
+#: templates/index.html:113
 msgid ""
 "Les informations fournies sur ce site sont a titre informatif et ne "
 "remplacent en aucun cas une consultation medicale professionnelle. Le Dr "
@@ -1029,6 +1016,27 @@ msgstr "معدات حديثة"
 #: templates/work.html:80
 msgid "Technologies de pointe"
 msgstr "تكنولوجيا متقدمة"
+
+#~ msgid "Je suis Médecin,"
+#~ msgstr "أنا طبيب،"
+
+#~ msgid ""
+#~ "Passionné d'Art, animé par l'esprit d'aide depuis je me déploie où je "
+#~ "peux du mieux que je pourrais aux côtés de ceux qui ont besoin d'aide."
+#~ msgstr ""
+#~ "متحمس للفن، مدفوع بروح المساعدة، أبذل جهدي لأكون إلى جانب من يحتاج "
+#~ "للمساعدة."
+
+#~ msgid ""
+#~ "Vous trouverez chez moi un engagement à servir et un désir de s'améliorer."
+#~ msgstr "ستجد عندي التزامًا بالخدمة ورغبة في التطور."
+
+#~ msgid "Ma foi soutient et me fait tenir par la grâce de Dieu."
+#~ msgstr "إيماني يدعمني ويجعلني ثابتًا بفضل الله."
+
+#~ msgid ""
+#~ "C'est un plaisir de découvrir et partager avec vous. Soyez la bienvenue."
+#~ msgstr "يسعدني أن أكتشف وأشارك معكم. مرحبًا بكم."
 
 #~ msgid "personnes ont lu cet article"
 #~ msgstr "شخص قرأ هذا المقال"

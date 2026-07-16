@@ -10,6 +10,10 @@
              </li>
 
              <li>
+               <a href="{% url 'services' %}" class="footer__link">{% trans "Services" %}</a>
+            </li>
+
+             <li>
                 <a href="{% url 'portfolio' %}" class="footer__link">{% trans "Portfolio" %} </a>
              </li>
 
@@ -50,7 +54,7 @@
        </div>
 
        <span class="footer__copy">
-          &#169; Dr. Lekamya Ngambi Ben-ido. All rights reserved
-       </span>
+         &copy; {% now "Y" %} Dr. Lekamya Ngambi Ben-ido. {% trans "Tous droits réservés." %}
+      </span>
     </div>
  </footer>

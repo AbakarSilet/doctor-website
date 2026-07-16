@@ -1219,6 +1219,9 @@ body.dark-theme {
     text-align: center;
     align-self: end;
   }
+  .home__presentation b {
+    color: var(--first-color);
+  }
 
   .home__presentation {
     grid-area: presentation;
