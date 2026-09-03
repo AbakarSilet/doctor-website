@@ -1,85 +1,38 @@
+{% extends "base.html" %}
 {% load static %}
 {% load i18n %}
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>{% trans "Politique de confidentialité" %}</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            padding: 50px 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
-        .updated {
-            font-size: 14px;
-            color: #888;
-            margin-bottom: 30px;
-        }
-        h2 {
-            font-size: 18px;
-            margin-top: 30px;
-            margin-bottom: 8px;
-        }
-        p, li {
-            font-size: 16px;
-            line-height: 1.7;
-            color: #333;
-        }
-        ul {
-            padding-left: 20px;
-            margin: 8px 0;
-        }
-        hr {
-            border: none;
-            border-top: 1px solid #eee;
-            margin: 24px 0;
-        }
-        .contact-box {
-            background-color: #f8f8f8;
-            border-radius: 5px;
-            padding: 16px 20px;
-            font-size: 15px;
-            color: #555;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .back-link {
-            display: inline-block;
-            margin-top: 30px;
-            font-size: 15px;
-        }
-    </style>
-</head>
-<body>
+{% block title %}
+{% trans "Politique de confidentialité | Dr Lekamya Ngambi Ben-Ido" %}
+{% endblock title %}
+
+{% block meta_description %}
+{% trans "Site officiel du Dr Lekamya Ngambi Ben-Ido, médecin au Tchad. Politique de confidentialité" %}
+{% endblock meta_description %}  
+
+{% block style %}
+{{ block.super }}
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'css/privacy_policy.css' %}">
+{% endblock style %}
+{% block content %}
+
     <div class="container">
         <h1>{% trans "Politique de confidentialité" %}</h1>
-        <p class="updated">{% trans "Dernière mise à jour : mai 2026" %}</p>
+        <p class="updated">{% trans "Dernière mise à jour : Septembre 2026" %}</p>
 
         <h2>{% trans "1. Présentation" %}</h2>
-        <p>{% blocktrans %}Le site <strong>docteurlekamya.com</strong> est exploité par Dr Lekamya Ngambi BenIdo. Cette politique explique quelles données sont collectées, pourquoi, et comment elles sont protégées.{% endblocktrans %}</p>
+        <p>{% blocktrans %}La présente politique de confidentialité s'applique à la fois au site web <strong>docteurlekamya.com</strong> et à l'application mobile <strong>DrepaNo</strong>, tous deux édités sous le nom de développeur <strong>abakarix4it</strong>. Cette politique explique quelles données sont collectées, pourquoi, et comment elles sont protégées.{% endblocktrans %}</p>
 
         <hr>
 
-        <h2>{% trans "2. Données collectées" %}</h2>
-        <p>{% trans "Nous collectons uniquement les données que vous fournissez volontairement via le formulaire de contact :" %}</p>
+
+        <h2>{% trans "2. Application mobile DrepaNo" %}</h2>
+        <p>{% trans "L'application mobile <strong>DrepaNo</strong> accède uniquement aux contenus publiés via une API publique en lecture seule. L'application elle-même ne collecte, ne stocke et ne transmet aucune information personnelle ou sensible concernant ses utilisateurs." %}</p>
+
+        <hr>
+
+        <h2>{% trans "3. Données collectées via le site web" %}</h2>
+        <p>{% trans "Sur notre site web, nous collectons uniquement les données que vous fournissez volontairement via le formulaire de contact :" %}</p>
         <ul>
             <li>{% trans "Nom complet" %}</li>
             <li>{% trans "Adresse e-mail" %}</li>
@@ -89,21 +42,17 @@
 
         <hr>
 
-        <h2>{% trans "3. Finalité du traitement" %}</h2>
+
+        <h2>{% trans "4. Finalité du traitement" %}</h2>
         <ul>
-            <li>{% trans "Répondre à vos messages via le formulaire de contact" %}</li>
-            <li>{% trans "Améliorer le contenu et l'expérience du site grâce aux statistiques anonymes" %}</li>
+            <li>{% trans "Répondre à vos messages via le formulaire de contact du site web" %}</li>
+            <li>{% trans "Améliorer le contenu et l'expérience de nos services grâce aux statistiques anonymes" %}</li>
         </ul>
 
         <hr>
 
-        <h2>{% trans "4. Application mobile" %}</h2>
-        <p>{% trans "L'application mobile accède uniquement aux articles publiés via une API publique en lecture seule. Aucune donnée personnelle n'est collectée par l'application." %}</p>
-
-        <hr>
-
         <h2>{% trans "5. Cookies" %}</h2>
-        <p>{% trans "Nous utilisons des cookies analytiques (Google Analytics) qui collectent des données anonymes sur votre navigation (pages visitées, durée, pays). Vous pouvez désactiver ces cookies via les paramètres de votre navigateur." %}</p>
+        <p>{% trans "Nous utilisons des cookies analytiques (Google Analytics) sur notre site web qui collectent des données anonymes sur votre navigation (pages visitées, durée, pays). Vous pouvez désactiver ces cookies via les paramètres de votre navigateur." %}</p>
 
         <hr>
 
@@ -113,18 +62,17 @@
         <hr>
 
         <h2>{% trans "7. Vos droits" %}</h2>
-        <p>{% trans "Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données personnelles. Pour exercer ces droits, contactez-nous à l'adresse ci-dessous." %}</p>
+        <p>{% trans "Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données personnelles. Pour exercer ces droits, contactez-nous via les coordonnées ci-dessous." %}</p>
 
         <hr>
 
         <h2>{% trans "8. Contact" %}</h2>
         <div class="contact-box">
-            <strong>Dr Lekamya Ngambi BenIdo</strong><br>
-            {% trans "Pour toute question relative à vos données personnelles :" %}<br>
+            <strong>abakarix4it</strong><br>
+            {% trans "Pour toute question relative à l'application DrepaNo, au site web ou à vos données personnelles :" %}<br>
             <a href="{% url 'contact_us' %}">{% trans "Formulaire de contact" %}</a>
         </div>
 
         <a href="{% url 'home' %}" class="back-link">← {% trans "Retour à l'accueil" %}</a>
     </div>
-</body>
-</html>
+{% endblock content %}

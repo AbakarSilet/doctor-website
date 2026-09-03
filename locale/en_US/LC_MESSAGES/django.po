@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-16 19:38+0100\n"
+"POT-Creation-Date: 2026-09-03 20:27+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -399,7 +399,7 @@ msgstr "about your health and needs"
 msgid "Ecrivez vos noms"
 msgstr "Enter your full name"
 
-#: templates/contact.html:34 templates/privacy_policy.html:84
+#: templates/contact.html:34 templates/privacy_policy.html:37
 msgid "Nom complet"
 msgstr "Full name"
 
@@ -423,7 +423,7 @@ msgstr "Subject"
 msgid "Écrivez votre message"
 msgstr "Write your message"
 
-#: templates/contact.html:64 templates/privacy_policy.html:86
+#: templates/contact.html:64 templates/privacy_policy.html:39
 msgid "Message"
 msgstr "Message"
 
@@ -451,10 +451,9 @@ msgstr "Blog"
 msgid "Contact"
 msgstr "Contact"
 
-#: templates/includes/footer.html:28 templates/privacy_policy.html:7
-#: templates/privacy_policy.html:73
+#: templates/includes/footer.html:28 templates/privacy_policy.html:20
 msgid "Politique de confidentialité"
-msgstr "Privacy policy"
+msgstr "Privacy Policy"
 
 #: templates/includes/footer.html:33
 msgid "Transition"
@@ -494,10 +493,11 @@ msgid "Vaccination"
 msgstr "Vaccination"
 
 #: templates/index.html:6
+#, fuzzy
+#| msgid "Contactez Dr Lekamya Ngambi Ben-Ido – Médecin au Tchad"
 msgid ""
 "Dr Lekamya Ngambi Ben-Ido | Médecin au Tchad – Prévention & Conseils Santé "
-msgstr ""
-"Dr. Lekamya Ngambi Ben-Ido | Physician in Chad – Health Tips & Prevention"
+msgstr "Contact Dr. Lekamya Ngambi Ben-Ido – Physician in Chad"
 
 #: templates/index.html:10
 msgid ""
@@ -603,95 +603,117 @@ msgstr ""
 "consultation. Dr. Lekamya Ngambi Ben-Ido disclaims any responsibility for "
 "its use without prior medical advice."
 
-#: templates/privacy_policy.html:74
-msgid "Dernière mise à jour : mai 2026"
-msgstr "Last updated: May 2026"
-
-#: templates/privacy_policy.html:76
-msgid "1. Présentation"
-msgstr "1. Introduction"
-
-#: templates/privacy_policy.html:77
-msgid ""
-"Le site <strong>docteurlekamya.com</strong> est exploité par Dr Lekamya "
-"Ngambi BenIdo. Cette politique explique quelles données sont collectées, "
-"pourquoi, et comment elles sont protégées."
-msgstr ""
-"The site <strong>docteurlekamya.com</strong> is operated by Dr. Lekamya "
-"Ngambi BenIdo. This policy explains what data is collected, why, and how it "
-"is protected."
-
-#: templates/privacy_policy.html:81
-msgid "2. Données collectées"
-msgstr "2. Data Collected"
-
-#: templates/privacy_policy.html:82
-msgid ""
-"Nous collectons uniquement les données que vous fournissez volontairement "
-"via le formulaire de contact :"
-msgstr ""
-"We only collect data that you voluntarily provide through the contact form:"
-
-#: templates/privacy_policy.html:85
+#: templates/privacy_policy.html:5
 #, fuzzy
-#| msgid "adresse email"
-msgid "Adresse e-mail"
-msgstr "email address"
+#| msgid "Parcours et expériences médicales du Dr Lekamya Ngambi Ben-Ido"
+msgid "Politique de confidentialité | Dr Lekamya Ngambi Ben-Ido"
+msgstr "Medical Background and Experience of Dr. Lekamya Ngambi Ben-Ido"
 
-#: templates/privacy_policy.html:88
+#: templates/privacy_policy.html:9
+msgid ""
+"Site officiel du Dr Lekamya Ngambi Ben-Ido, médecin au Tchad. Politique de "
+"confidentialité"
+msgstr ""
+"Privacy Policy| Dr. Lekamya Ngambi Ben-Ido"
+
+
+#: templates/privacy_policy.html:21
+msgid "Dernière mise à jour : Septembre 2026"
+msgstr "Last updated: September 2026"
+
+#: templates/privacy_policy.html:23
+msgid "1. Présentation"
+msgstr "Introduction"
+
+#: templates/privacy_policy.html:24
+msgid ""
+"La présente politique de confidentialité s'applique à la fois au site web "
+"<strong>docteurlekamya.com</strong> et à l'application mobile "
+"<strong>DrepaNo</strong>, tous deux édités sous le nom de développeur "
+"<strong>abakarix4it</strong>. Cette politique explique quelles données sont "
+"collectées, pourquoi, et comment elles sont protégées."
+msgstr ""
+"This privacy policy applies to both the <strong>docteurlekamya.com</strong> "
+"website and the <strong>DrepaNo</strong> mobile application, both published "
+"under the developer name <strong>abakarix4it</strong>. This policy explains "
+"what data is collected, why, and how it is protected."
+
+#: templates/privacy_policy.html:29
+msgid "2. Application mobile DrepaNo"
+msgstr "4. Mobile Application"
+
+#: templates/privacy_policy.html:30
+msgid ""
+"L'application mobile <strong>DrepaNo</strong> accède uniquement aux contenus "
+"publiés via une API publique en lecture seule. L'application elle-même ne "
+"collecte, ne stocke et ne transmet aucune information personnelle ou "
+"sensible concernant ses utilisateurs."
+msgstr ""
+"The <strong>DrepaNo</strong> mobile application only accesses content "
+"published via a public read-only API. The application itself does not "
+"collect, store, or transmit any personal or sensitive information "
+"concerning its users."
+
+#: templates/privacy_policy.html:34
+msgid "3. Données collectées via le site web"
+msgstr "2. Data Collected via website"
+
+#: templates/privacy_policy.html:35
+msgid ""
+"Sur notre site web, nous collectons uniquement les données que vous "
+"fournissez volontairement via le formulaire de contact :"
+msgstr ""
+"On our website, we only collect data that you voluntarily provide "
+"via the contact form:"
+
+#: templates/privacy_policy.html:38
+msgid "Adresse e-mail"
+msgstr "Email address"
+
+#: templates/privacy_policy.html:41
 msgid ""
 "Le site utilise également des cookies analytiques (Google Analytics) pour "
 "mesurer l'audience de façon anonyme."
 msgstr ""
-"The site also uses analytics cookies (Google Analytics) to anonymously "
-"measure audience traffic."
+"The site also uses analytical cookies (Google Analytics) to measure "
+"audience traffic anonymously."
 
-#: templates/privacy_policy.html:92
-msgid "3. Finalité du traitement"
-msgstr "3. Purpose of Processing"
+#: templates/privacy_policy.html:46
+msgid "4. Finalité du traitement"
+msgstr "4. Purpose of processing"
 
-#: templates/privacy_policy.html:94
-msgid "Répondre à vos messages via le formulaire de contact"
-msgstr "Respond to your messages sent via the contact form"
+#: templates/privacy_policy.html:48
+msgid "Répondre à vos messages via le formulaire de contact du site web"
+msgstr "Respond to your messages via the website's contact form"
 
-#: templates/privacy_policy.html:95
+#: templates/privacy_policy.html:49
 msgid ""
-"Améliorer le contenu et l'expérience du site grâce aux statistiques anonymes"
+"Améliorer le contenu et l'expérience de nos services grâce aux statistiques "
+"anonymes"
 msgstr ""
-"Improve the site's content and user experience using anonymous statistics"
+"Improve the content and experience of our services through anonymous "
+"statistics"
 
-#: templates/privacy_policy.html:100
-msgid "4. Application mobile"
-msgstr "4. Mobile Application"
-
-#: templates/privacy_policy.html:101
-msgid ""
-"L'application mobile accède uniquement aux articles publiés via une API "
-"publique en lecture seule. Aucune donnée personnelle n'est collectée par "
-"l'application."
-msgstr ""
-"The mobile application only accesses published articles through a read-only "
-"public API. No personal data is collected by the application."
-
-#: templates/privacy_policy.html:105
+#: templates/privacy_policy.html:54
 msgid "5. Cookies"
 msgstr "5. Cookies"
 
-#: templates/privacy_policy.html:106
+#: templates/privacy_policy.html:55
 msgid ""
-"Nous utilisons des cookies analytiques (Google Analytics) qui collectent des "
-"données anonymes sur votre navigation (pages visitées, durée, pays). Vous "
-"pouvez désactiver ces cookies via les paramètres de votre navigateur."
+"Nous utilisons des cookies analytiques (Google Analytics) sur notre site web "
+"qui collectent des données anonymes sur votre navigation (pages visitées, "
+"durée, pays). Vous pouvez désactiver ces cookies via les paramètres de votre "
+"navigateur."
 msgstr ""
-"We use analytics cookies (Google Analytics) that collect anonymous data "
-"about your browsing (pages visited, duration, country). You can disable "
-"these cookies through your browser settings."
+"We use analytical cookies (Google Analytics) on our website that collect "
+"anonymous data about your browsing (pages visited, duration, country). "
+"You can disable these cookies via your browser settings."
 
-#: templates/privacy_policy.html:110
+#: templates/privacy_policy.html:59
 msgid "6. Conservation des données"
 msgstr "6. Data Retention"
 
-#: templates/privacy_policy.html:111
+#: templates/privacy_policy.html:60
 msgid ""
 "Les messages du formulaire de contact sont conservés le temps nécessaire "
 "pour y répondre. Les données analytiques sont anonymisées et agrégées."
@@ -699,39 +721,37 @@ msgstr ""
 "Messages sent through the contact form are kept for as long as necessary to "
 "respond to them. Analytics data is anonymized and aggregated."
 
-#: templates/privacy_policy.html:115
+#: templates/privacy_policy.html:64
 msgid "7. Vos droits"
 msgstr "7. Your Rights"
 
-#: templates/privacy_policy.html:116
+#: templates/privacy_policy.html:65
 msgid ""
 "Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et "
 "de suppression de vos données personnelles. Pour exercer ces droits, "
-"contactez-nous à l'adresse ci-dessous."
+"contactez-nous via les coordonnées ci-dessous."
 msgstr ""
 "In accordance with the GDPR, you have the right to access, rectify, and "
-"delete your personal data. To exercise these rights, please contact us at "
-"the address below."
+"delete your personal data. To exercise these rights, contact us via the "
+"details below."
 
-#: templates/privacy_policy.html:120
-#, fuzzy
-#| msgid "Contact"
+#: templates/privacy_policy.html:69
 msgid "8. Contact"
 msgstr "Contact"
 
-#: templates/privacy_policy.html:123
-msgid "Pour toute question relative à vos données personnelles :"
+#: templates/privacy_policy.html:72
+msgid ""
+"Pour toute question relative à l'application DrepaNo, au site web ou à vos "
+"données personnelles :"
 msgstr ""
+"For any questions regarding the DrepaNo application, the website, or your "
+"personal data:"
 
-#: templates/privacy_policy.html:124
-#, fuzzy
-#| msgid "Message de contact"
+#: templates/privacy_policy.html:73
 msgid "Formulaire de contact"
 msgstr "Contact message"
 
-#: templates/privacy_policy.html:127
-#, fuzzy
-#| msgid "Retour à la page d'accueil"
+#: templates/privacy_policy.html:76
 msgid "Retour à l'accueil"
 msgstr "Back to homepage"
 
@@ -747,6 +767,9 @@ msgid ""
 "Ben-Ido : consultations generales, consultations specialisees, petite "
 "chirurgie, pathologies medicales et vaccination."
 msgstr ""
+"Discover all the medical services offered by Dr. Lekamya Ngambi "
+"Ben-Ido: general consultations, specialized consultations, minor "
+"surgery, medical conditions, and vaccination."
 
 #: templates/services.html:19
 msgid "Les Services"
